@@ -47,3 +47,73 @@
 
 ### Status
 ✅ Completed Day 1 Learning
+
+
+# Day 2 - Boolean Algebra
+
+## Topics Learned
+- Introduction to Boolean Algebra
+- Boolean Variables and Constants
+- Basic Boolean Operations
+- Boolean Laws and Theorems
+- De Morgan's Theorems
+- Boolean Expression Simplification
+
+## Boolean Operators
+
+| Operator | Symbol | Example |
+|-----------|---------|---------|
+| AND | . | A.B |
+| OR | + | A+B |
+| NOT | ' | A' |
+
+## Boolean Laws
+
+### Commutative Law
+- A + B = B + A
+- A.B = B.A
+
+### Associative Law
+- (A + B) + C = A + (B + C)
+- (A.B).C = A.(B.C)
+
+### Distributive Law
+- A(B + C) = AB + AC
+- A + BC = (A + B)(A + C)
+
+### Identity Law
+- A + 0 = A
+- A.1 = A
+
+### Null Law
+- A + 1 = 1
+- A.0 = 0
+
+### Idempotent Law
+- A + A = A
+- A.A = A
+
+## De Morgan's Theorems
+
+1. (A.B)' = A' + B'
+2. (A + B)' = A'.B'
+
+## Example Simplification
+
+Expression:
+A + A.B
+
+Simplified:
+A
+
+Reason:
+A + A.B = A
+
+## Applications
+- Digital Circuit Design
+- Logic Optimization
+- VLSI Design
+- FPGA and ASIC Development
+
+## Status
+✅ Completed Day 2 Learning
