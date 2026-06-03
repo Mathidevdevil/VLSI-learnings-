@@ -117,3 +117,77 @@ A + A.B = A
 
 ## Status
 ✅ Completed Day 2 Learning
+
+# Day 3 - Karnaugh Maps (K-Map)
+
+## Topics Learned
+- Introduction to Karnaugh Maps
+- SOP (Sum of Products)
+- POS (Product of Sums)
+- K-Map Simplification
+- 2-Variable K-Map
+- 3-Variable K-Map
+- 4-Variable K-Map
+- Don't Care Conditions
+
+## What is a K-Map?
+
+A Karnaugh Map (K-Map) is a graphical method used to simplify Boolean expressions and reduce the number of logic gates required in a digital circuit.
+
+## Advantages
+- Simplifies Boolean expressions
+- Reduces hardware complexity
+- Minimizes logic gates
+- Improves circuit efficiency
+
+## 2-Variable K-Map
+
+| A\B | 0 | 1 |
+|------|---|---|
+| 0 | 0 | 1 |
+| 1 | 1 | 1 |
+
+Simplified Expression:
+F = A + B
+
+## Steps for K-Map Simplification
+
+1. Draw the K-Map.
+2. Fill cells with values from the truth table.
+3. Group adjacent 1s in powers of 2.
+4. Create the simplified Boolean expression.
+5. Verify the result.
+
+## Example
+
+Given:
+
+F(A,B) = Σ(1,2,3)
+
+K-Map:
+
+| A\B | 0 | 1 |
+|------|---|---|
+| 0 | 0 | 1 |
+| 1 | 1 | 1 |
+
+Simplified Result:
+
+F = A + B
+
+## Applications
+- Digital Logic Design
+- FPGA Design
+- ASIC Design
+- VLSI Circuit Optimization
+
+## Interview Questions
+
+1. What is a Karnaugh Map?
+2. Why is K-Map used?
+3. What is the maximum number of variables suitable for K-Map?
+4. What are Don't Care conditions?
+5. Difference between SOP and POS?
+
+## Status
+✅ Completed Day 3 Learning
