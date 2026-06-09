@@ -191,3 +191,108 @@ F = A + B
 
 ## Status
 ✅ Completed Day 3 Learning
+
+
+# Day 4 - Combinational Circuits
+
+## Topics Learned
+- Introduction to Combinational Circuits
+- Half Adder
+- Full Adder
+- Half Subtractor
+- Full Subtractor
+- Multiplexer (MUX)
+- Demultiplexer (DEMUX)
+- Encoder
+- Decoder
+
+## What are Combinational Circuits?
+
+Combinational circuits are digital circuits whose outputs depend only on the current inputs and not on previous states.
+
+## Characteristics
+- No memory elements
+- No feedback paths
+- Output depends only on present inputs
+
+## Half Adder
+
+### Inputs
+- A
+- B
+
+### Outputs
+- Sum = A ⊕ B
+- Carry = A · B
+
+### Truth Table
+
+| A | B | Sum | Carry |
+|---|---|-----|-------|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
+
+## Full Adder
+
+### Inputs
+- A
+- B
+- Cin
+
+### Outputs
+- Sum = A ⊕ B ⊕ Cin
+- Carry = AB + BCin + ACin
+
+## Multiplexer (MUX)
+
+A Multiplexer selects one input from multiple inputs and forwards it to the output.
+
+### Example
+- 4:1 MUX
+- 4 Inputs
+- 2 Select Lines
+- 1 Output
+
+## Demultiplexer (DEMUX)
+
+A Demultiplexer routes one input to one of many outputs.
+
+### Example
+- 1:4 DEMUX
+- 1 Input
+- 2 Select Lines
+- 4 Outputs
+
+## Encoder
+
+An Encoder converts multiple input lines into a smaller number of output bits.
+
+### Example
+- 8-to-3 Encoder
+
+## Decoder
+
+A Decoder converts binary information into multiple output lines.
+
+### Example
+- 3-to-8 Decoder
+
+## Applications
+- Arithmetic Logic Units (ALU)
+- Data Routing
+- Memory Address Decoding
+- Communication Systems
+- Processor Design
+
+## Interview Questions
+
+1. What is a combinational circuit?
+2. Difference between Half Adder and Full Adder?
+3. What is the function of a Multiplexer?
+4. Difference between Encoder and Decoder?
+5. Where are combinational circuits used in VLSI?
+
+## Status
+✅ Completed Day 4 Learning
