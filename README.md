@@ -296,3 +296,124 @@ A Decoder converts binary information into multiple output lines.
 
 ## Status
 ✅ Completed Day 4 Learning
+
+
+# Day 5 - Sequential Circuits
+
+## Topics Learned
+- Introduction to Sequential Circuits
+- Latches and Flip-Flops
+- SR Flip-Flop
+- JK Flip-Flop
+- D Flip-Flop
+- T Flip-Flop
+- Registers
+- Counters
+
+## What are Sequential Circuits?
+
+Sequential circuits are digital circuits whose outputs depend on both current inputs and previous states.
+
+## Characteristics
+- Have memory elements
+- Use feedback paths
+- Output depends on present input and past state
+- Generally controlled by a clock signal
+
+## Difference Between Combinational and Sequential Circuits
+
+| Feature | Combinational | Sequential |
+|----------|--------------|------------|
+| Memory | No | Yes |
+| Feedback | No | Yes |
+| Clock | Not Required | Usually Required |
+| Output Depends On | Current Inputs | Inputs + Previous State |
+
+## SR Flip-Flop
+
+### Inputs
+- S (Set)
+- R (Reset)
+
+### Outputs
+- Q
+- Q'
+
+### Truth Table
+
+| S | R | Q(next) |
+|---|---|---------|
+| 0 | 0 | No Change |
+| 0 | 1 | 0 |
+| 1 | 0 | 1 |
+| 1 | 1 | Invalid |
+
+## JK Flip-Flop
+
+### Truth Table
+
+| J | K | Q(next) |
+|---|---|---------|
+| 0 | 0 | No Change |
+| 0 | 1 | 0 |
+| 1 | 0 | 1 |
+| 1 | 1 | Toggle |
+
+## D Flip-Flop
+
+### Equation
+Q(next) = D
+
+### Truth Table
+
+| D | Q(next) |
+|---|---------|
+| 0 | 0 |
+| 1 | 1 |
+
+## T Flip-Flop
+
+### Truth Table
+
+| T | Q(next) |
+|---|---------|
+| 0 | No Change |
+| 1 | Toggle |
+
+## Registers
+
+Registers are groups of flip-flops used to store binary data.
+
+### Applications
+- Data Storage
+- CPU Registers
+- Memory Systems
+
+## Counters
+
+Counters are sequential circuits used to count clock pulses.
+
+### Types
+- Asynchronous Counter
+- Synchronous Counter
+- Up Counter
+- Down Counter
+- Up/Down Counter
+
+## Applications
+- Digital Clocks
+- Frequency Counters
+- Processors
+- Memory Devices
+- VLSI Systems
+
+## Interview Questions
+
+1. What is a Sequential Circuit?
+2. Difference between Latch and Flip-Flop?
+3. Why is D Flip-Flop widely used?
+4. What is Race Around Condition in JK Flip-Flop?
+5. Difference between Synchronous and Asynchronous Counters?
+
+## Status
+✅ Completed Day 5 Learning
