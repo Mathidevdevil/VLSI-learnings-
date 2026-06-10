@@ -406,14 +406,5 @@ Counters are sequential circuits used to count clock pulses.
 - Processors
 - Memory Devices
 - VLSI Systems
-
-## Interview Questions
-
-1. What is a Sequential Circuit?
-2. Difference between Latch and Flip-Flop?
-3. Why is D Flip-Flop widely used?
-4. What is Race Around Condition in JK Flip-Flop?
-5. Difference between Synchronous and Asynchronous Counters?
-
 ## Status
 ✅ Completed Day 5 Learning
