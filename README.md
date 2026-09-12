@@ -408,3 +408,32 @@ Counters are sequential circuits used to count clock pulses.
 - VLSI Systems
 ## Status
 ✅ Completed Day 5 Learning
+
+1. What is a Flip-Flop?
+A flip-flop is a 1-bit sequential storage element. It stores either 0 or 1 and changes its output based on a clock.
+2. Focus on these 4 flip-flops
+SR Flip-Flop
+JK Flip-Flop
+D Flip-Flop 
+T Flip-Flop
+3. D Flip-Flop — most important
+The basic behavior is:
+At the active clock edge: Q(next) = D
+Clock
+D
+Q(next)
+↑
+0
+0
+↑
+1
+1
+So, if D = 1 when the clock edge arrives, the flip-flop stores 1.
+4. Timing concepts — VERY IMPORTANT
+Learn these today:
+Setup time:
+Minimum time that D must remain stable before the clock edge.
+Hold time:
+Minimum time that D must remain stable after the clock edge.
+Clock-to-Q delay:
+Time taken for Q to change after the clock edge
