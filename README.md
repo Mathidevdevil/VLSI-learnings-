@@ -436,4 +436,58 @@ Minimum time that D must remain stable before the clock edge.
 Hold time:
 Minimum time that D must remain stable after the clock edge.
 Clock-to-Q delay:
-Time taken for Q to change after the clock edge
+Time taken for Q to change after the clock edge.
+
+What is Setup Time? 
+Answer:
+Setup time is the minimum amount of time before the active clock edge during which the input data must remain stable so that the flip-flop can correctly capture the data.
+Example:
+If setup time = 2 ns, data must be stable at least 2 ns before the clock edge.
+
+
+What is Hold Time? 
+Answer:
+Hold time is the minimum amount of time after the active clock edge during which the input data must remain stable so that the flip-flop correctly captures the data.
+Example:
+If hold time = 1 ns, data must remain stable for at least 1 ns after the clock edge.
+Easy way to remember:
+Setup → Before clock
+Hold → After clock
+
+
+What is Metastability? 
+Answer:
+Metastability is an unpredictable temporary state of a flip-flop that can occur when its setup or hold time is violated.
+The output may take an uncertain amount of time to settle to either 0 or 1.
+How to reduce it?
+A common technique is using a 2-flip-flop synchronizer when transferring a single-bit signal between asynchronous clock domains.
+
+
+Latch vs Flip-Flop 
+Latch
+Flip-Flop
+Level-sensitive
+Edge-triggered
+Controlled by enable
+Controlled by clock edge
+Can change during the active level
+Changes at clock edge
+Simpler hardware
+More controlled timing
+Interview answer:
+A latch is level-sensitive, whereas a flip-flop is edge-triggered.
+
+Blocking vs Non-Blocking Assignment 
+Blocking (=)
+Executes immediately.
+Commonly used for combinational logic.
+always @(*) begin
+    a = b;
+    c = a;
+end
+Non-blocking (<=)
+Updates occur at the end of the current simulation time step.
+Commonly used for sequential/cocked logic.
+always @(posedge clk) begin
+    q <= d;
+end
