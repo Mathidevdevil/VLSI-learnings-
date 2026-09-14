@@ -491,3 +491,150 @@ Commonly used for sequential/cocked logic.
 always @(posedge clk) begin
     q <= d;
 end
+
+
+
+What is a Multiplexer (MUX)?
+A Multiplexer is a combinational circuit that selects one input from multiple inputs and sends it to a single output.
+For a 4:1 MUX:
+Inputs: I0, I1, I2, I3
+Select lines: S1, S0
+Output: Y
+S1
+S0
+Y
+0
+0
+I0
+0
+1
+I1
+1
+0
+I2
+1
+1
+I3
+Applications: Data selection, datapaths, ALUs, communication systems.
+
+
+What is a Decoder?
+A decoder converts n input lines into up to 2ⁿ output lines.
+For a 2-to-4 decoder:
+A
+B
+Active Output
+0
+0
+Y0
+0
+1
+Y1
+1
+0
+Y2
+1
+1
+Y3
+Only one output is active for each input combination.
+Applications: Memory address decoding, instruction decoding, chip selection.
+
+
+MUX vs Decoder
+MUX
+Decoder
+Many inputs → one output
+n inputs → 2ⁿ outputs
+Selects data
+Activates one output
+Used for data selection
+Used for address/instruction decoding
+Easy memory:
+MUX = Select
+Decoder = Identify
+
+
+Synchronous vs Asynchronous Counter
+Synchronous counter:
+All flip-flops receive the same clock.
+Outputs change together.
+Faster and preferred for high-speed designs.
+Asynchronous counter:
+Only the first flip-flop receives the external clock.
+Subsequent flip-flops are clocked by previous outputs.
+Also called a ripple counter.
+Has cumulative propagation delay.
+Interview point: Synchronous counters generally provide better timing performance.
+
+
+What is Race-Around Condition?
+Race-around occurs mainly in a level-triggered JK flip-flop when:
+J = K = 1
+If the clock pulse remains active longer than the flip-flop's propagation delay, the output can toggle repeatedly during the same clock pulse.
+Solutions:
+Use an edge-triggered flip-flop
+Use a master-slave JK flip-flop
+Reduce the clock pulse width
+6. What is a Universal Gate?
+A gate that can be used to implement any Boolean function is called a universal gate.
+NAND and NOR are universal gates.
+For example, using NAND gates:
+NOT: A NAND A = A̅
+AND: NAND followed by NAND-as-NOT
+OR: Can also be constructed using NAND gates with De Morgan's theorem.
+
+
+Combinational vs Sequential Circuit
+Combinational
+Sequential
+Output depends only on current inputs
+Output depends on current inputs + previous state
+No memory
+Has memory
+Usually no clock required
+Usually clock-controlled
+MUX, decoder, adder
+Flip-flop, counter, register
+Example:
+Adder → Combinational
+Counter → Sequential
+
+
+What is a K-map?
+A Karnaugh Map (K-map) is a graphical method used to simplify Boolean expressions.
+It helps reduce:
+Number of gates
+Hardware complexity
+Power consumption
+Propagation delay
+For example, instead of implementing a large Boolean expression directly, K-map grouping can produce a much simpler circuit.
+
+Moore vs Mealy FSM
+Moore Machine:
+Output depends only on the present state.
+Output = f(Present State)
+Mealy Machine:
+Output depends on present state + input.
+Output = f(Present State, Input)
+Moore
+Mealy
+Output depends on state
+Output depends on state + input
+Output generally changes with state
+Output can change immediately with input
+Usually more states
+Usually fewer states
+Interview shortcut:
+Moore → State only
+Mealy → State + Input
+
+What is Clock Skew?
+Clock skew is the difference in the arrival time of the same clock edge at different flip-flops.
+For example:
+Clock Source
+     |
+     +------> FF1  (arrives at 5 ns)
+     |
+     +------> FF2  (arrives at 7 ns)
+Clock skew = 7 − 5 = 2 ns
+Large or uncontrolled clock skew can cause setup and hold timing violations.
