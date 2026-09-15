@@ -704,3 +704,70 @@ Higher noise margin generally means better noise immunity.
 
 ---
 
+What is a Hazard?
+
+Answer:
+A hazard is an unwanted temporary change (glitch) in the output of a digital circuit caused by different propagation delays through different paths.
+
+Main types:
+
+Static-1 hazard
+
+Static-0 hazard
+
+Dynamic hazard
+
+
+Hazards are particularly important in asynchronous and high-speed digital designs.
+
+
+---
+
+What is Clock Jitter?
+
+Answer:
+Clock jitter is the variation in the timing of clock edges from their ideal positions.
+
+For example, if a clock edge is expected at exactly 10 ns but arrives at 9.8 ns or 10.2 ns, this variation is jitter.
+
+Effect: It reduces the available timing margin and can contribute to setup/hold violations.
+
+
+---
+
+What is Clock Skew?
+
+Answer:
+Clock skew is the difference in clock arrival time between two sequential elements.
+
+Example:
+
+Clock
+  |
+  +----> FF1 → clock arrives at 5 ns
+  |
+  +----> FF2 → clock arrives at 6 ns
+
+Clock skew = 1 ns
+
+
+---
+
+What is Setup and Hold Violation?
+
+Setup violation:
+Data does not become stable sufficiently before the clock edge.
+
+Hold violation:
+Data changes too soon after the clock edge.
+
+Setup        Hold
+         ↓            ↓
+---------|------------|---------
+         ↑ Clock edge
+
+Both can cause incorrect data capture or metastability.
+
+
+---
+
