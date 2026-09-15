@@ -638,3 +638,39 @@ Clock Source
      +------> FF2  (arrives at 7 ns)
 Clock skew = 7 − 5 = 2 ns
 Large or uncontrolled clock skew can cause setup and hold timing violations.
+
+
+
+
+
+What is Propagation Delay?
+
+Answer:
+Propagation delay is the time taken for a change at the input of a digital circuit to produce a corresponding change at its output.
+
+There are commonly two delays:
+
+tPLH → Output changes Low → High
+
+tPHL → Output changes High → Low
+
+
+Interview point: Lower propagation delay generally means a faster circuit.
+
+
+---
+
+What is Fan-in?
+
+Answer:
+Fan-in is the maximum number of inputs that a logic gate can accept.
+
+Example:
+
+A 4-input AND gate has a fan-in of 4.
+
+
+---
+
+
+
