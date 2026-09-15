@@ -672,5 +672,35 @@ A 4-input AND gate has a fan-in of 4.
 
 ---
 
+What is Fan-out?
 
+Answer:
+Fan-out is the maximum number of gate inputs that the output of a logic gate can drive reliably.
+
+Easy memory:
+
+> Fan-in → Inputs to a gate
+Fan-out → Gates driven by an output
+
+
+
+
+---
+
+What is Noise Margin?
+
+Answer:
+Noise margin is the ability of a digital circuit to tolerate unwanted noise without changing the logic value.
+
+There are two important values:
+
+NMH → Noise Margin High
+
+NML → Noise Margin Low
+
+
+Higher noise margin generally means better noise immunity.
+
+
+---
 
