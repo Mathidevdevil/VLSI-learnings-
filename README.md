@@ -771,3 +771,36 @@ Both can cause incorrect data capture or metastability.
 
 ---
 
+What is a Register?
+
+Answer:
+A register is a group of flip-flops used to store multiple bits of data.
+
+For example:
+
+8-bit register = 8 flip-flops
+
+Registers are widely used in processors, pipelines, data storage and control logic.
+
+
+---
+
+What is a Shift Register?
+
+Answer:
+A shift register is a group of flip-flops in which data is shifted left or right on each clock pulse.
+
+Types include:
+
+SISO — Serial In Serial Out
+
+SIPO — Serial In Parallel Out
+
+PISO — Parallel In Serial Out
+
+PIPO — Parallel In Parallel Out
+
+
+Applications: Data transfer, serial/parallel conversion, temporary storage.
+
+
