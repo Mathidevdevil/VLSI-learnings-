@@ -880,3 +880,22 @@ What is a Pull-Down Network (PDN)?
 Answer:
 The NMOS network that connects the output to GND when the required logic condition is satisfied is called the Pull-Down Network.
 It produces a logic 0 at the output.
+
+CMOS NAND vs CMOS NOR
+For a 2-input NAND:
+PMOS → parallel
+NMOS → series
+For a 2-input NOR:
+PMOS → series
+NMOS → parallel
+Easy memory:
+NAND: NMOS series, PMOS parallel
+NOR: NMOS parallel, PMOS series
+
+What is PVT?
+PVT stands for:
+P — Process
+V — Voltage
+T — Temperature
+These conditions can affect circuit delay, power and functionality.
+VLSI designs are checked across different PVT corners to ensure reliable operation.
