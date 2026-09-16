@@ -852,3 +852,19 @@ ON
 Therefore:
 Input 0 → Output 1
 Input 1 → Output 0
+
+Why does CMOS consume low static power?
+Answer:
+Ideally, when the CMOS inverter is in a stable logic state, one transistor is ON while the other is OFF. Therefore, there is ideally no direct DC path from VDD to GND, resulting in very low static power.
+Dynamic switching power is still consumed when the circuit changes state.
+
+
+What are the main components of CMOS power?
+Dynamic power is approximately:
+Pdynamic = α × C × V² × f
+where:
+α = switching activity
+C = capacitance
+V = supply voltage
+f = frequency
+There is also leakage/static power, which becomes increasingly important in modern technologies.
