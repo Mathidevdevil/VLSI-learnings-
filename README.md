@@ -818,3 +818,37 @@ Answer:
 NMOS is an N-channel MOSFET. It conducts when a sufficiently high voltage is applied to its gate relative to its source.
 In digital CMOS logic, NMOS is mainly used in the pull-down network to connect the output toward 0.
 
+What is a PMOS transistor?
+Answer:
+PMOS is a P-channel MOSFET. It conducts when its gate voltage is sufficiently low relative to its source.
+In CMOS logic, PMOS is mainly used in the pull-up network to connect the output toward 1.
+
+Explain a CMOS Inverter
+A CMOS inverter consists of:
+1 PMOS at the top
+1 NMOS at the bottom
+       VDD
+        |
+       PMOS
+        |
+        +---- OUT
+        |
+       NMOS
+        |
+       GND
+Both gates receive the same input.
+Input
+PMOS
+NMOS
+Output
+0
+ON
+OFF
+1
+1
+OFF
+ON
+0
+Therefore:
+Input 0 → Output 1
+Input 1 → Output 0
