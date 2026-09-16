@@ -868,3 +868,15 @@ C = capacitance
 V = supply voltage
 f = frequency
 There is also leakage/static power, which becomes increasingly important in modern technologies.
+
+
+What is a Pull-Up Network (PUN)?
+Answer:
+The PMOS network that connects the output to VDD when the required logic condition is satisfied is called the Pull-Up Network.
+It produces a logic 1 at the output.
+
+
+What is a Pull-Down Network (PDN)?
+Answer:
+The NMOS network that connects the output to GND when the required logic condition is satisfied is called the Pull-Down Network.
+It produces a logic 0 at the output.
