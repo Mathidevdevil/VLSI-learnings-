@@ -803,4 +803,18 @@ PIPO — Parallel In Parallel Out
 
 Applications: Data transfer, serial/parallel conversion, temporary storage.
 
+What is CMOS?
+Answer:
+CMOS stands for Complementary Metal-Oxide-Semiconductor.
+A CMOS circuit uses complementary NMOS and PMOS transistors to implement digital logic.
+Main advantages:
+Low static power consumption
+High noise immunity
+High packing density
+Suitable for large-scale integration
+
+What is an NMOS transistor?
+Answer:
+NMOS is an N-channel MOSFET. It conducts when a sufficiently high voltage is applied to its gate relative to its source.
+In digital CMOS logic, NMOS is mainly used in the pull-down network to connect the output toward 0.
 
