@@ -46,7 +46,6 @@
 - VLSI System Design YouTube Channel
 
 ### Status
-✅ Completed Day 1 Learning
 
 
 # Day 2 - Boolean Algebra
@@ -116,7 +115,6 @@ A + A.B = A
 - FPGA and ASIC Development
 
 ## Status
-✅ Completed Day 2 Learning
 
 # Day 3 - Karnaugh Maps (K-Map)
 
@@ -190,7 +188,7 @@ F = A + B
 5. Difference between SOP and POS?
 
 ## Status
-✅ Completed Day 3 Learning
+
 
 
 # Day 4 - Combinational Circuits
@@ -295,7 +293,7 @@ A Decoder converts binary information into multiple output lines.
 5. Where are combinational circuits used in VLSI?
 
 ## Status
-✅ Completed Day 4 Learning
+
 
 
 # Day 5 - Sequential Circuits
@@ -407,7 +405,7 @@ Counters are sequential circuits used to count clock pulses.
 - Memory Devices
 - VLSI Systems
 ## Status
-✅ Completed Day 5 Learning
+
 
 1. What is a Flip-Flop?
 A flip-flop is a 1-bit sequential storage element. It stores either 0 or 1 and changes its output based on a clock.
