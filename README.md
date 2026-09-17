@@ -897,3 +897,20 @@ V — Voltage
 T — Temperature
 These conditions can affect circuit delay, power and functionality.
 VLSI designs are checked across different PVT corners to ensure reliable operation.
+
+
+What is Verilog?
+Verilog is a Hardware Description Language (HDL) used to describe, design, simulate, and verify digital hardware circuits.
+
+It can be used to model circuits such as:
+
+Multiplexers
+Adders
+Flip-flops
+Counters
+FSMs
+Processors
+
+What is the difference between Verilog and a programming language?
+A programming language describes software instructions, whereas Verilog describes hardware behavior and structure.
+For example, Verilog can describe multiple hardware operations that work in parallel.
