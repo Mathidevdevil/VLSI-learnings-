@@ -914,3 +914,38 @@ Processors
 What is the difference between Verilog and a programming language?
 A programming language describes software instructions, whereas Verilog describes hardware behavior and structure.
 For example, Verilog can describe multiple hardware operations that work in parallel.
+
+
+What is a module?
+A module is the basic building block in Verilog. It defines the inputs, outputs, and internal logic of a hardware circuit.
+module and_gate (
+    input  a,
+    input  b,
+    output y
+);
+
+assign y = a & b;
+
+endmodule
+
+What is wire?
+wire represents a net used to connect different parts of a circuit.
+It is commonly driven by:
+
+assign
+Module outputs
+
+Example:
+wire y;
+assign y = a & b;
+
+
+What is reg?
+reg is a Verilog variable that can hold a value assigned inside a procedural block such as always.
+Example:
+reg q;
+
+always @(posedge clk) begin
+    q <= d;
+end
+A reg does not necessarily mean a physical register. Hardware inference depends on the code and sensitivity/clocking.
