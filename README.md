@@ -987,3 +987,39 @@ always @(posedge clk) begin
     q <= d;
 end
 
+--------
+Blocking vs Non-blocking assignment
+
+Blocking (=):
+
+a = b;
+
+The assignment takes effect immediately in procedural execution.
+
+Non-blocking (<=):
+
+q <= d;
+
+The update is scheduled for the appropriate simulation update region.
+
+Common rule:
+
+Combinational logic → blocking (=)
+Sequential logic → non-blocking (<=)
+
+----------
+Write Verilog code for a 2:1 MUX
+module mux2to1 (
+    input  a,
+    input  b,
+    input  sel,
+    output y
+);
+
+assign y = sel ? b : a;
+
+endmodule
+
+When sel = 0 → y = a
+When sel = 1 → y = b
+
