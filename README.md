@@ -958,3 +958,32 @@ Example: assign y = a & b;	Example: always @(*) y = a & b;
 
 In SystemVerilog, logic is commonly used instead of reg for many designs.
 
+--------
+What is assign?
+
+Answer:
+assign is a continuous assignment used to drive a net.
+
+Example:
+
+assign y = a & b;
+
+Whenever a or b changes, y is updated.
+--------
+What is an always block?
+
+Answer:
+An always block describes behavior that executes whenever its triggering event occurs.
+
+Combinational example:
+
+always @(*) begin
+    y = a & b;
+end
+
+Sequential example:
+
+always @(posedge clk) begin
+    q <= d;
+end
+
