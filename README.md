@@ -1023,3 +1023,29 @@ endmodule
 When sel = 0 → y = a
 When sel = 1 → y = b
 
+---------
+Write Verilog code for a D Flip-Flop
+module d_ff (
+    input  clk,
+    input  d,
+    output reg q
+);
+
+always @(posedge clk) begin
+    q <= d;
+end
+
+endmodule
+
+The flip-flop captures d on the positive edge of the clock.
+
+-----------
+What is a Testbench?
+A testbench is Verilog/SystemVerilog code used to apply inputs to a design under test (DUT) and check its outputs during simulation.
+
+A testbench generally:
+
+Instantiates the DUT
+Generates inputs/clock/reset
+Observes outputs
+Checks whether the design behaves correctly
