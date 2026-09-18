@@ -1074,3 +1074,24 @@ Gate-level Netlist
 The synthesis tool tries to meet requirements such as timing, area, and power.
 
 ---------------
+What is STA?
+STA stands for Static Timing Analysis.
+It analyzes whether a digital design meets its timing requirements without applying simulation test vectors.
+STA checks paths such as:
+Flip-Flop → Combinational Logic → Flip-Flop 
+It mainly checks setup and hold timing.
+
+---------------
+What is a Critical Path?
+
+The critical path is the timing path with the largest delay among relevant paths and therefore has the greatest impact on the maximum operating frequency.
+
+Example:
+
+FF1 → Logic → Logic → Logic → FF2
+             ↑
+       Long delay path
+
+Reducing critical-path delay can improve the circuit's maximum frequency.
+
+----------------
