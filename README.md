@@ -1121,3 +1121,34 @@ Tcq = clock-to-Q delay
 Tcomb = combinational logic delay
 Tsetup = setup time
 Tskew = clock skew contribution, with sign depending on convention
+
+------
+
+What is Hold Timing?
+
+After the destination flip-flop's active clock edge, the incoming data must remain stable for at least the required hold time.
+
+A simplified relationship is:
+
+Tcq(min) + Tcomb(min) ≥ Thold + clock-skew-related term
+
+The exact sign depends on how clock skew is defined in the timing equation.
+
+--------------
+What is CTS?
+
+CTS stands for Clock Tree Synthesis.
+
+It creates a clock distribution network that delivers the clock from the clock source to sequential elements while controlling:
+
+Clock skew
+Clock latency
+Transition
+Clock routing
+             Clock Source
+                  |
+              ----------
+              |        |
+             FF1      FF2
+
+-----------------------
