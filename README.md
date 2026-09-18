@@ -1095,3 +1095,29 @@ FF1 → Logic → Logic → Logic → FF2
 Reducing critical-path delay can improve the circuit's maximum frequency.
 
 ----------------
+What is Slack?
+
+Slack represents the difference between the required timing and the actual arrival timing.
+
+A simplified representation is:
+
+Slack = Required Time − Arrival Time
+
+Positive slack → timing requirement is met
+Negative slack → timing violation
+
+-------------------
+What is Setup Timing?
+
+For a register-to-register path, the data launched by one flip-flop must reach the destination flip-flop sufficiently before its active clock edge.
+
+A simplified setup relationship is:
+
+Tclk ≥ Tcq + Tcomb + Tsetup + Tskew
+
+where:
+
+Tcq = clock-to-Q delay
+Tcomb = combinational logic delay
+Tsetup = setup time
+Tskew = clock skew contribution, with sign depending on convention
