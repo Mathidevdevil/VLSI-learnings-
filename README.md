@@ -1049,3 +1049,28 @@ Instantiates the DUT
 Generates inputs/clock/reset
 Observes outputs
 Checks whether the design behaves correctly
+
+------------
+What is RTL?
+RTL stands for Register Transfer Level. It describes how data moves between registers and the logic operations performed on that data. RTL is commonly written using Verilog/SystemVerilog.
+
+-------
+
+What is RTL Design?
+RTL design is the process of describing the digital hardware architecture using HDL.
+For an example:
+Input → Combinational Logic → Register → Output
+The RTL description is then used for synthesis.
+
+---------
+What is Logic Synthesis?
+Logic synthesis converts RTL code into a gate-level netlist using standard-cell libraries.
+
+RTL
+ ↓
+Synthesis
+ ↓
+Gate-level Netlist
+The synthesis tool tries to meet requirements such as timing, area, and power.
+
+---------------
