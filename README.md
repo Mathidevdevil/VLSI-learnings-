@@ -1152,3 +1152,48 @@ Clock routing
              FF1      FF2
 
 -----------------------
+What is Place and Route?
+
+Placement: Determines where standard cells are physically located on the chip.
+
+Routing: Creates physical metal connections between those cells.
+
+Netlist
+   ↓
+Placement
+   ↓
+CTS
+   ↓
+Routing
+   ↓
+Timing / Physical Checks
+
+
+-------------
+Explain the RTL-to-GDSII Flow
+
+A simplified flow is:
+
+Specification
+      ↓
+RTL Design
+      ↓
+Functional Verification
+      ↓
+Logic Synthesis
+      ↓
+Floorplanning
+      ↓
+Placement
+      ↓
+Clock Tree Synthesis
+      ↓
+Routing
+      ↓
+STA / Physical Verification
+      ↓
+GDSII
+
+GDSII is a layout data format used to represent the physical design for manufacturing.
+
+-----------------------
