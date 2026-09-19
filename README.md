@@ -1197,3 +1197,19 @@ GDSII
 GDSII is a layout data format used to represent the physical design for manufacturing.
 
 -----------------------
+What is Floorplanning?
+Floorplanning is the process of deciding the overall physical organization of a chip, including the placement of major blocks, I/O locations, power structures, and other physical constraints.
+
+Main goals:
+
+Good timing
+Lower congestion
+Efficient area utilization
+Proper power distribution
+
+------------------------
+
+What is Standard Cell Placement?
+Placement determines the physical locations of standard cells inside the core area while trying to optimize timing, congestion, and power.
+
+-------------------------------
