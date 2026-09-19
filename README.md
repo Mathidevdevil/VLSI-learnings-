@@ -1213,3 +1213,25 @@ What is Standard Cell Placement?
 Placement determines the physical locations of standard cells inside the core area while trying to optimize timing, congestion, and power.
 
 -------------------------------
+
+What is Utilization?
+Utilization indicates how much of the available core area is occupied by standard cells.
+A simplified formula is:
+
+Utilization = Cell Area / Available Core Area × 100
+
+Very high utilization can increase routing congestion and make timing closure more difficult.
+
+
+-------------------
+What is Congestion?
+Congestion occurs when too many routing connections compete for the available routing resources in a particular region.
+High congestion can cause:
+Routing difficulties
+Timing degradation
+DRC violations
+
+
+--------------------------
+
+
