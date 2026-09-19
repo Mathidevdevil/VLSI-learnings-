@@ -1256,3 +1256,27 @@ Reliability problems
 Therefore, power and signal wires must satisfy current-density limits.
 
 ---------------------------------------
+What is Timing Closure?
+
+Timing closure is the process of making a design satisfy its required timing constraints, especially setup and hold requirements.
+Typical methods include:
+Cell sizing
+Buffer insertion
+Logic optimization
+Placement optimization
+Clock optimization
+Routing optimization
+
+----------------------------------
+How can you fix a Setup Violation?
+
+Common techniques include:
+Reduce combinational path delay
+Upsize cells
+Optimize/restructure logic
+Reduce wire delay
+Improve placement
+Use appropriate lower-Vt cells where allowed
+Optimize the clock path
+Goal: Make data arrive earlier at the destination register.
+
