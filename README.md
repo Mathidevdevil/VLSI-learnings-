@@ -1303,3 +1303,24 @@ LVS — Layout Versus Schematic
 Checks whether the extracted layout connectivity matches the intended circuit/netlist.
 
 ---------------------------------------------------------
+What is PVT Corner?
+PVT means:
+P — Process
+V — Voltage
+T — Temperature
+
+A design is analyzed under different PVT conditions because transistor and interconnect behavior changes with manufacturing variation, supply voltage, and temperature.
+
+-----------------------------------------------------------
+What is a Via?
+A via is a vertical connection between different metal layers in an integrated circuit.
+
+Metal 2 ─────────
+        │
+       VIA
+        │
+Metal 1 ─────────
+
+It allows signals or power to move between metal layers.
+
+----------------------------------------------------------------
