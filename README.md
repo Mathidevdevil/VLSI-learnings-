@@ -1234,4 +1234,25 @@ DRC violations
 
 --------------------------
 
+What is IR Drop?
+IR drop is the voltage drop caused by current flowing through the resistance of the power distribution network.
 
+V = I × R
+
+Excessive IR drop can reduce the voltage available to cells and may affect circuit performance and reliability.
+
+-----------------------------
+
+What is Electromigration (EM)?
+
+Electromigration is the movement of metal atoms caused by high current density through interconnects.
+
+Over time, excessive EM can cause:
+
+Open circuits
+Shorts
+Reliability problems
+
+Therefore, power and signal wires must satisfy current-density limits.
+
+---------------------------------------
