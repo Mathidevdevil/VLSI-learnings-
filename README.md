@@ -1359,3 +1359,20 @@ It accounts for variations in transistor and interconnect behavior within the sa
 Because different parts of a chip may not behave identically, timing analysis applies appropriate variation/derating models.
 
 ------------------------
+What is AOCV?
+AOCV = Advanced On-Chip Variation.
+AOCV provides more refined timing derating than basic OCV by considering factors such as:
+Logic depth
+Distance/path characteristics
+Variation effects
+It can reduce unnecessary pessimism compared with simple OCV.
+
+--------------------------
+What is POCV?
+POCV = Parametric On-Chip Variation.
+
+It models process variation more statistically/parametrically rather than relying only on fixed derating values.
+
+It is used for more accurate timing analysis in advanced technology nodes.
+
+-----------------------------------
