@@ -1324,3 +1324,17 @@ Metal 1 ─────────
 It allows signals or power to move between metal layers.
 
 ----------------------------------------------------------------
+What is Clock Latency?
+Clock latency is the time taken for the clock signal to travel from the clock source to the clock pin of a flip-flop.
+There are two common types:
+
+Source latency: Clock source → clock definition point
+Network latency: Clock definition point → sequential element
+
+---------------------
+What is Clock Uncertainty?
+
+Clock uncertainty represents the timing margin used to account for variations such as clock jitter, skew uncertainty, and other clock-related variations.
+It reduces the timing margin available for data transfer.
+
+------------------------------
