@@ -1417,3 +1417,41 @@ Useful skew is the intentional adjustment of clock arrival times at sequential e
 For example, delaying the capture clock can provide more time for a setup-critical path, but it can affect hold timing and other paths.
 
 ----------------------------------------------------------------
+What is Timing Closure?
+Timing closure is the process of ensuring that all required timing constraints are satisfied after implementation.
+It includes fixing:
+Setup violations
+Hold violations
+Transition violations
+Clock-related issues
+
+The goal is to achieve zero unacceptable timing violations under the required analysis conditions.
+
+--------------------------------------------------
+
+What is a Timing Report?
+A timing report provides information about a timing path, such as:
+
+Startpoint
+Endpoint
+Launch clock
+Capture clock
+Cell delays
+Net delays
+Arrival time
+Required time
+Slack
+
+A simplified path looks like:
+
+Startpoint
+    ↓
+Launch FF
+    ↓
+Combinational Logic
+    ↓
+Capture FF
+    ↓
+Slack
+
+--------------------------------------------------------------------
