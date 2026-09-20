@@ -1376,3 +1376,23 @@ It models process variation more statistically/parametrically rather than relyin
 It is used for more accurate timing analysis in advanced technology nodes.
 
 -----------------------------------
+What is Derating?
+Derating means applying a timing adjustment factor to account for variations in cell or interconnect delays.
+
+For example, a tool may use different derating factors for early and late timing paths depending on the analysis methodology.
+
+--------------------------------------
+
+What is a False Path?
+A false path is a timing path that does not need to be analyzed for functional timing, because it is not expected to be sensitized during normal operation.
+
+Example:
+
+Input A ──┐
+          MUX ──> Logic
+Input B ──┘
+
+If a particular control condition makes a path functionally impossible, that path may be constrained as false.
+Important: A false-path constraint should only be used when the path is genuinely functionally impossible; otherwise, it can hide real timing problems.
+
+-------------------------------------------------
