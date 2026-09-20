@@ -1396,3 +1396,24 @@ If a particular control condition makes a path functionally impossible, that pat
 Important: A false-path constraint should only be used when the path is genuinely functionally impossible; otherwise, it can hide real timing problems.
 
 -------------------------------------------------
+What is a Multicycle Path?
+
+Answer:
+A multicycle path is a path intentionally allowed to take more than one clock cycle to transfer data.
+
+Example:
+
+FF1 ──> Combinational Logic ──> FF2
+
+Normally:     1 clock cycle
+Multicycle:   2 or more cycles
+
+The timing constraints must explicitly tell the STA tool about the intended behavior.
+
+----------------------------------------------------------------
+What is Useful Skew?
+Useful skew is the intentional adjustment of clock arrival times at sequential elements to improve timing.
+
+For example, delaying the capture clock can provide more time for a setup-critical path, but it can affect hold timing and other paths.
+
+----------------------------------------------------------------
