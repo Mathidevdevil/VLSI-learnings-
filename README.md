@@ -1338,3 +1338,24 @@ Clock uncertainty represents the timing margin used to account for variations su
 It reduces the timing margin available for data transfer.
 
 ------------------------------
+
+What is Clock Jitter?
+
+Clock jitter is the variation in the arrival time of a clock edge from its ideal position.
+
+Example:
+
+Expected edge = 10 ns
+Actual edges = 9.8 ns, 10.2 ns
+
+The variation represents jitter.
+
+-------------------
+What is OCV?
+
+OCV = On-Chip Variation.
+
+It accounts for variations in transistor and interconnect behavior within the same chip.
+Because different parts of a chip may not behave identically, timing analysis applies appropriate variation/derating models.
+
+------------------------
