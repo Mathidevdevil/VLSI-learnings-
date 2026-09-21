@@ -1552,3 +1552,14 @@ Breaking a long metal segment appropriately
 The exact solution depends on the process and design rules.
 
 --------------------------------------------------------------------
+What is Routing?
+
+Routing is the process of creating physical metal and via connections between placed cells according to the netlist.
+
+Two broad stages are:
+
+Global routing → Determines approximate routing paths.
+
+Detailed routing → Creates exact tracks, vias, and geometries while satisfying design rules.
+
+-------------------------------------------------------------------
