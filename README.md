@@ -1455,3 +1455,21 @@ Capture FF
 Slack
 
 --------------------------------------------------------------------
+What is Dynamic Power?
+
+Dynamic power is the power consumed when digital circuits switch between 0 and 1.
+
+A commonly used approximation is:
+
+Pdynamic = α × C × V² × f
+
+Where:
+
+α = switching activity
+C = capacitance
+V = supply voltage
+f = frequency
+
+Key point: Power has a quadratic dependence on voltage.
+
+----------------------------------------------------
