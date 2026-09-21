@@ -1540,3 +1540,15 @@ The antenna effect is a fabrication-related issue where a long metal structure c
 This accumulated charge can potentially damage the thin gate oxide.
 
 --------------------------------------------------------------------
+How can an Antenna Violation be fixed?
+
+Common techniques include:
+
+Antenna diode insertion
+Metal layer jumping
+Routing modification
+Breaking a long metal segment appropriately
+
+The exact solution depends on the process and design rules.
+
+--------------------------------------------------------------------
