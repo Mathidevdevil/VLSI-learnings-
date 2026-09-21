@@ -1533,3 +1533,10 @@ Electromagnetic effects
 Excessive transition time
 
 -----------------------------------------------------------------------
+What is Antenna Effect?
+
+The antenna effect is a fabrication-related issue where a long metal structure connected to a transistor gate can accumulate charge during certain manufacturing steps.
+
+This accumulated charge can potentially damage the thin gate oxide.
+
+--------------------------------------------------------------------
