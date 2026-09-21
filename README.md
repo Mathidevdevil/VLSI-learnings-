@@ -1502,3 +1502,12 @@ Victim    ─────────────
 A changing signal on the aggressor can disturb the victim signal.
 
 --------------------------------------------------------------------
+What is Crosstalk Delay?
+
+Crosstalk can change the delay of a victim signal.
+
+Depending on whether neighboring signals switch in the same or opposite direction, the victim transition can become faster or slower.
+
+This can create timing problems.
+
+---------------------------------------------------------------------------
