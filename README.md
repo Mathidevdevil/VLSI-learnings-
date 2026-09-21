@@ -1473,3 +1473,17 @@ f = frequency
 Key point: Power has a quadratic dependence on voltage.
 
 ----------------------------------------------------
+What is Leakage Power?
+
+Leakage power is the power consumed due to unwanted current flow even when a circuit is not switching.
+
+Major leakage mechanisms include:
+
+Subthreshold leakage
+Gate leakage
+Junction leakage
+
+Leakage becomes particularly important in modern low-voltage technologies.
+
+
+-------------------------------------------------------
