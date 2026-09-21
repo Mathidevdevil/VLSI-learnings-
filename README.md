@@ -1487,3 +1487,18 @@ Leakage becomes particularly important in modern low-voltage technologies.
 
 
 -------------------------------------------------------
+What is Crosstalk?
+
+Crosstalk is unwanted electrical interaction between nearby signal wires due to coupling capacitance and inductance.
+
+For example:
+
+Aggressor ─────────────
+              ↕
+          Coupling
+              ↕
+Victim    ─────────────
+
+A changing signal on the aggressor can disturb the victim signal.
+
+--------------------------------------------------------------------
