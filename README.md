@@ -1518,3 +1518,18 @@ Crosstalk noise is an unwanted voltage disturbance induced on a victim net by sw
 Unlike crosstalk delay, the main concern here is the unwanted voltage glitch itself.
 
 ----------------------------------------------------------------------
+
+What is Signal Integrity?
+
+Signal integrity refers to maintaining the quality and correctness of electrical signals as they propagate through the interconnect.
+
+Problems include:
+
+Crosstalk
+Noise
+Reflection
+Overshoot/undershoot
+Electromagnetic effects
+Excessive transition time
+
+-----------------------------------------------------------------------
