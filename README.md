@@ -1511,3 +1511,10 @@ Depending on whether neighboring signals switch in the same or opposite directio
 This can create timing problems.
 
 ---------------------------------------------------------------------------
+What is Crosstalk Noise?
+
+Crosstalk noise is an unwanted voltage disturbance induced on a victim net by switching activity on a nearby aggressor net.
+
+Unlike crosstalk delay, the main concern here is the unwanted voltage glitch itself.
+
+----------------------------------------------------------------------
