@@ -1563,3 +1563,17 @@ Global routing → Determines approximate routing paths.
 Detailed routing → Creates exact tracks, vias, and geometries while satisfying design rules.
 
 -------------------------------------------------------------------
+What is DRC?
+
+DRC = Design Rule Check
+
+DRC verifies that the physical layout follows the foundry's manufacturing rules.
+
+Examples:
+
+Minimum metal width
+Minimum spacing
+Via rules
+Enclosure requirements
+
+--------------------------------------------------------------------------
