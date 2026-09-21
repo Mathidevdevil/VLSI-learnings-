@@ -1577,3 +1577,22 @@ Via rules
 Enclosure requirements
 
 --------------------------------------------------------------------------
+What is LVS?
+
+LVS = Layout Versus Schematic
+
+LVS compares the circuit extracted from the physical layout against the intended schematic/netlist.
+
+It checks things such as:
+
+Connectivity
+Devices
+Device terminals
+Net relationships
+
+Easy memory:
+
+DRC → Design rules
+LVS → Layout vs intended circuit
+
+-------------------------------------------------------------------------------------
