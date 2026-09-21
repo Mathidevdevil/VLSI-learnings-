@@ -1596,3 +1596,25 @@ DRC → Design rules
 LVS → Layout vs intended circuit
 
 -------------------------------------------------------------------------------------
+What is Power Planning?
+
+Power planning creates a robust network to distribute VDD and VSS/GND throughout the chip.
+
+Typical structures include:
+
+        VDD
+  =================
+  | | | | | | | |
+  | | | | | | | |   ← Power distribution
+  | | | | | | | |
+  =================
+        VSS
+
+It helps control:
+
+IR drop
+Electromigration
+Voltage stability
+Power delivery
+
+-----------------------------------------------------------------------------------------
