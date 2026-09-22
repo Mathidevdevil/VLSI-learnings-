@@ -1800,3 +1800,20 @@ Reducing local current density
 Adding appropriate decoupling capacitance where applicable
 
 ---------------------------------------------------------------------------------
+You have a setup violation. What will you check first?
+
+Answer:
+
+First, I would inspect the worst setup timing path and identify:
+
+Startpoint and endpoint
+Data path delay
+Cell delay vs. net delay
+Clock latency and skew
+Logic depth
+Transition and load
+Whether the violation is caused by placement/routing or constraints
+
+Then I would choose an appropriate optimization such as cell sizing, buffering, logic optimization, placement improvement, or clock optimization.
+
+------------------------------------------------------------------------------
