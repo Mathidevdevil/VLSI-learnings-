@@ -1802,7 +1802,6 @@ Adding appropriate decoupling capacitance where applicable
 ---------------------------------------------------------------------------------
 You have a setup violation. What will you check first?
 
-Answer:
 
 First, I would inspect the worst setup timing path and identify:
 
@@ -1817,3 +1816,21 @@ Whether the violation is caused by placement/routing or constraints
 Then I would choose an appropriate optimization such as cell sizing, buffering, logic optimization, placement improvement, or clock optimization.
 
 ------------------------------------------------------------------------------
+You have a hold violation. What will you do?
+
+First, I would identify the worst hold path and check:
+
+Minimum data-path delay
+Clock skew
+Cell and net delays
+PVT corner
+Whether the constraint is correct
+
+Then I can add appropriate delay buffers, adjust cell sizing, or optimize the clock/data path.
+
+Remember:
+
+Setup → data is too slow.
+Hold → data is too fast.
+
+-------------------------------------------------------------------------
