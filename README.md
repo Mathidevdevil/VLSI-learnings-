@@ -1751,3 +1751,20 @@ Optimize clock skew carefully
 Important: A hold fix should not create an unacceptable setup violation.
 
 -------------------------------------------------------------------
+What is Floorplan Utilization?
+
+Floorplan utilization is the percentage of the available core area occupied by standard cells.
+
+A simplified formula:
+
+Utilization = Standard Cell Area / Core Area × 100
+
+Very high utilization can lead to:
+
+Congestion
+Routing difficulty
+Timing problems
+
+Very low utilization can waste area.
+
+-----------------------------------------------------------------------
