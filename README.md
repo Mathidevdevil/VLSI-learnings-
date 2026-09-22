@@ -1652,3 +1652,12 @@ Long-wire delay
 Signal integrity
 
 ------------------------------
+Why are buffers used in clock networks?
+
+
+Buffers are used in clock networks to provide sufficient drive strength and control clock latency, transition, and skew.
+
+CTS inserts buffers/inverters to distribute the clock to many sequential elements.
+
+
+---------------------------------------------------------------------
