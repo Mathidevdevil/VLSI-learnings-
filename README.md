@@ -1851,3 +1851,19 @@ Therefore, timing must be analyzed again after CTS.
 
 -------------------------------------------------------------------------------------
 
+Why does routing affect timing?
+
+After routing, actual interconnect parasitics become more realistic.
+
+Long or congested wires can have higher:
+
+Resistance
+Capacitance
+RC delay
+
+Therefore:
+
+Longer wire → Higher delay → Possible timing violation
+
+
+----------------------------------------------------------------------------------------------
