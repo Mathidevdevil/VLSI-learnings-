@@ -1731,3 +1731,23 @@ Improve placement
 Reduce wire length
 Add/reposition buffers appropriately
 Optimize clock path/skew
+
+---------------------------------------------------------
+
+How do you fix a hold violation?
+
+Think:
+
+Data is early → make the data path slower.
+
+Possible methods:
+
+Add delay buffers
+Increase data-path delay
+Downsize cells where appropriate
+Adjust routing
+Optimize clock skew carefully
+
+Important: A hold fix should not create an unacceptable setup violation.
+
+-------------------------------------------------------------------
