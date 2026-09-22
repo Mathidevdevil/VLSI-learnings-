@@ -1688,3 +1688,16 @@ High fan-out
 Possible fixes: Upsizing the driver, inserting buffers, or improving placement/routing.
 
 --------------------------------------------------------------
+What is Placement Optimization?
+
+Answer:
+Placement optimization adjusts cell locations to improve:
+
+Timing
+Congestion
+Wire length
+Power
+
+For example, moving related cells closer together can reduce interconnect delay.
+
+---------------------------------------------------------------------------------
