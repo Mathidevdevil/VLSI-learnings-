@@ -1867,3 +1867,20 @@ Longer wire → Higher delay → Possible timing violation
 
 
 ----------------------------------------------------------------------------------------------
+What would you check if congestion is high?
+
+Answer:
+
+I would check:
+
+Congestion map
+Cell density
+Macro placement
+High-fanout nets
+Pin density
+Routing blockages
+Long connections crossing the congested region
+
+Possible fixes include cell spreading, macro-placement changes, buffering, and placement/routing optimization.
+
+-----------------------------------------------------------------------------------------------------
