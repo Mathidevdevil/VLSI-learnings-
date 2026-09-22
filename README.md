@@ -1787,3 +1787,14 @@ Power
 Congestion
 
 ---------------------------------------------------------------------------
+
+What is IR Drop Fixing?
+
+If IR drop is excessive, possible solutions include:
+
+Strengthening the power grid
+Adding power straps
+Adding/repositioning vias
+Improving power distribution
+Reducing local current density
+Adding appropriate decoupling capacitance where applicable
