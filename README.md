@@ -1716,3 +1716,18 @@ Adjust blockages/constraints where appropriate
 Goal: Provide enough routing resources for all required connections.
 
 -----------------------------------------------------------------------------------------
+How do you fix a setup violation?
+
+Think:
+
+Data is late → make the data path faster.
+
+Possible methods:
+
+Upsize cells
+Use faster cells where allowed
+Reduce logic depth
+Improve placement
+Reduce wire length
+Add/reposition buffers appropriately
+Optimize clock path/skew
