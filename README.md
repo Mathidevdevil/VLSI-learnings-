@@ -1701,3 +1701,18 @@ Power
 For example, moving related cells closer together can reduce interconnect delay.
 
 ---------------------------------------------------------------------------------
+How do you fix congestion?
+
+Common approaches include:
+
+Reduce placement density
+Move cells
+Improve macro placement
+Spread cells in congested regions
+Optimize high-fanout nets
+Improve routing resources
+Adjust blockages/constraints where appropriate
+
+Goal: Provide enough routing resources for all required connections.
+
+-----------------------------------------------------------------------------------------
