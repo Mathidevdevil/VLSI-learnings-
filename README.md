@@ -1661,3 +1661,17 @@ CTS inserts buffers/inverters to distribute the clock to many sequential element
 
 
 ---------------------------------------------------------------------
+What is High Fan-out?
+
+High fan-out occurs when one driver drives a large number of loads.
+
+It can cause:
+
+Large capacitive load
+Increased delay
+Poor transition
+Timing violations
+
+Common solution: Buffer insertion or restructuring the logic.
+
+----------------------------------------------------------------------------------
