@@ -1620,7 +1620,7 @@ Power delivery
 -----------------------------------------------------------------------------------------
 What is Cell Sizing?
 
-Answer:
+
 Cell sizing means changing a standard cell to a different drive strength.
 
 For example:
@@ -1630,3 +1630,25 @@ INV_X1 → INV_X2 → INV_X4
 A larger cell can provide more drive strength and may reduce delay, but it usually increases area, power, and capacitance.
 
 ------------------------------------------------
+What is Buffer Insertion?
+
+
+Buffer insertion means adding buffers along a long or heavily loaded net to improve signal integrity and timing.
+
+Without buffer:
+
+Driver ────────────────> Load
+
+
+With buffer:
+
+Driver ─────> Buffer ─────> Load
+
+Buffers can help with:
+
+Transition
+Fan-out
+Long-wire delay
+Signal integrity
+
+------------------------------
