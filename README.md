@@ -1768,3 +1768,22 @@ Timing problems
 Very low utilization can waste area.
 
 -----------------------------------------------------------------------
+
+What is Macro Placement?
+
+Macro placement is deciding the physical locations of large blocks such as:
+
+SRAM
+ROM
+IP blocks
+Memory macros
+
+Good macro placement should consider:
+
+Connectivity
+Routing channels
+Timing
+Power
+Congestion
+
+---------------------------------------------------------------------------
