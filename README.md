@@ -1675,3 +1675,16 @@ Timing violations
 Common solution: Buffer insertion or restructuring the logic.
 
 ----------------------------------------------------------------------------------
+What is a Transition Violation?
+A transition violation occurs when a signal's rise or fall time exceeds the maximum limit specified by the library or timing constraints.
+
+It can be caused by:
+
+Large load
+Long interconnect
+Weak driver
+High fan-out
+
+Possible fixes: Upsizing the driver, inserting buffers, or improving placement/routing.
+
+--------------------------------------------------------------
