@@ -1834,3 +1834,20 @@ Setup → data is too slow.
 Hold → data is too fast.
 
 -------------------------------------------------------------------------
+Why can timing become worse after CTS?
+
+CTS changes the real clock network by introducing buffers and routing.
+
+Timing can change because of:
+
+Clock insertion delay
+Clock skew
+Clock transition
+Added clock buffers
+Clock routing parasitics
+Different clock arrival times
+
+Therefore, timing must be analyzed again after CTS.
+
+-------------------------------------------------------------------------------------
+
