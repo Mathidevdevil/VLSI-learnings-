@@ -1964,3 +1964,19 @@ LEF → Physical information
 LIB → Timing/power information
 
 -------------------------------------------------------------------------------------------
+What is an SDC file?
+
+SDC = Synopsys Design Constraints
+
+It defines timing and design constraints such as:
+
+create_clock
+set_input_delay
+set_output_delay
+set_clock_uncertainty
+set_false_path
+set_multicycle_path
+
+These constraints tell implementation and STA tools what timing requirements the design must satisfy.
+
+----------------------------------------------------------------------------------------------------
