@@ -1916,3 +1916,17 @@ Timing violations
 Timing across different scenarios/corners
 
 ---------------------------------------------------------------------------------------------
+What inputs are required for Physical Design?
+
+Common inputs include:
+
+Synthesized netlist
+LEF files
+Liberty (.lib) files
+Timing constraints (SDC)
+UPF/CPF for power intent when applicable
+Technology files
+Macro/IP information
+
+
+---------------------------------------------------------------------------------------------------
