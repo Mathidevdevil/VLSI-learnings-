@@ -1945,3 +1945,22 @@ Obstructions
 It is mainly used by physical implementation tools.
 
 -------------------------------------------------------------------------------------------------------
+What is a Liberty .lib file?
+
+A Liberty file contains timing, power, and logical characteristics of standard cells.
+
+It can include:
+
+Cell function
+Input/output timing
+Delay information
+Power information
+Setup/hold characteristics
+Transition/load-related data
+
+Easy memory:
+
+LEF → Physical information
+LIB → Timing/power information
+
+-------------------------------------------------------------------------------------------
