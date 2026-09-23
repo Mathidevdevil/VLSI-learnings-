@@ -1930,3 +1930,18 @@ Macro/IP information
 
 
 ---------------------------------------------------------------------------------------------------
+What is a LEF file?
+
+LEF = Library Exchange Format
+
+LEF provides physical information about cells/macros, such as:
+
+Cell dimensions
+Pin locations
+Metal layers
+Routing information
+Obstructions
+
+It is mainly used by physical implementation tools.
+
+-------------------------------------------------------------------------------------------------------
