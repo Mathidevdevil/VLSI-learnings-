@@ -1884,3 +1884,9 @@ Long connections crossing the congested region
 Possible fixes include cell spreading, macro-placement changes, buffering, and placement/routing optimization.
 
 -----------------------------------------------------------------------------------------------------
+What is Cadence Innovus?
+Cadence Innovus is a digital implementation tool used to take a synthesized netlist through physical design stages such as:
+
+Floorplanning → Placement → CTS → Routing → Optimization → Physical Signoff preparation
+
+-----------------------------------------------------------------------
