@@ -1890,3 +1890,15 @@ Cadence Innovus is a digital implementation tool used to take a synthesized netl
 Floorplanning → Placement → CTS → Routing → Optimization → Physical Signoff preparation
 
 -----------------------------------------------------------------------
+What is Synopsys ICC2?
+
+ICC2 (IC Compiler II) is Synopsys's physical implementation platform used for tasks such as:
+
+Floorplanning
+Placement
+CTS
+Routing
+Timing optimization
+Physical optimization
+
+---------------------------------------------------------------------------------
