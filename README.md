@@ -1902,3 +1902,17 @@ Timing optimization
 Physical optimization
 
 ---------------------------------------------------------------------------------
+What is PrimeTime?
+
+PrimeTime is a Static Timing Analysis (STA) tool from Synopsys.
+
+It is used to analyze:
+
+Setup timing
+Hold timing
+Clock paths
+Slack
+Timing violations
+Timing across different scenarios/corners
+
+---------------------------------------------------------------------------------------------
