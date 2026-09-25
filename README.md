@@ -2054,3 +2054,29 @@ Reduce load
 Improve placement
 Optimize routing
 The appropriate fix depends on whether the problem is caused by the driver, load, or interconnect.
+
+
+How do you fix a Setup Violation?
+Answer:
+The goal is to make the data arrive earlier.
+Possible methods:
+Upsize cells on the critical path
+Reduce logic depth
+Optimize placement
+Reduce wire delay
+Use appropriate lower-Vt cells where permitted
+Optimize clock path/skew
+Memory:
+Setup → Data late → Speed up data path.
+
+
+How do you fix a Hold Violation?
+Answer:
+The goal is to prevent data from arriving too early.
+Possible methods:
+Add delay buffers
+Downsize cells where appropriate
+Increase data-path delay
+Optimize clock skew carefully
+Memory:
+Hold → Data early → Slow down data path.
