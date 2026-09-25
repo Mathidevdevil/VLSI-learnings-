@@ -2115,3 +2115,17 @@ What is a Tap Cell?
 Answer:
 A tap cell provides a connection between the substrate/well and the appropriate power supply, helping maintain proper well/substrate bias and preventing certain latch-up-related issues.
 Tap cells are inserted according to the foundry's physical design rules.
+
+
+
+What is a Filler Cell?
+Answer:
+Filler cells are inserted into empty spaces between standard cells to maintain required well/substrate and power/ground continuity and satisfy physical design rules.
+They don't implement functional logic.
+
+
+
+What is an Endcap Cell?
+Answer:
+Endcap cells are placed at the ends of standard-cell rows to satisfy boundary-related physical and well/implant requirements.
+They help ensure the standard-cell layout meets technology-specific design rules.
