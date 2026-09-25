@@ -1980,3 +1980,27 @@ set_multicycle_path
 These constraints tell implementation and STA tools what timing requirements the design must satisfy.
 
 ----------------------------------------------------------------------------------------------------
+Why does high utilization cause congestion?
+Answer:
+When too many standard cells occupy the available area, there is less free space for routing.
+High utilization can therefore lead to:
+Routing congestion
+Longer wires
+Increased delay
+More DRC violations
+Difficulty achieving timing closure
+Possible solutions: Optimize placement, reduce utilization, improve floorplan, or add routing resources where possible.
+
+
+How do you fix a congestion problem?
+Answer:
+Common approaches include:
+Improve floorplan
+Reduce local cell density
+Spread cells
+Move large macros
+Optimize placement
+Improve pin access
+Adjust routing constraints
+Use higher routing layers where appropriate
+The exact solution depends on where and why congestion occurs.
