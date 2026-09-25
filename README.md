@@ -2098,3 +2098,20 @@ PLL
 DSP block
 IP blocks
 Macros are generally handled differently from ordinary standard cells during physical design.
+
+
+Why are macros important in floorplanning?
+Answer:
+Macro placement strongly affects:
+Routing congestion
+Timing
+Power distribution
+Blockages
+Signal connectivity
+Poor macro placement can create routing hot spots and long critical paths.
+
+
+What is a Tap Cell?
+Answer:
+A tap cell provides a connection between the substrate/well and the appropriate power supply, helping maintain proper well/substrate bias and preventing certain latch-up-related issues.
+Tap cells are inserted according to the foundry's physical design rules.
