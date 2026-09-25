@@ -2080,3 +2080,21 @@ Increase data-path delay
 Optimize clock skew carefully
 Memory:
 Hold → Data early → Slow down data path.
+
+
+What happens if you fix setup by changing the clock?
+Answer:
+Changing clock arrival times can improve setup timing, but it may create or worsen hold violations on other paths.
+Therefore, clock optimization must consider both setup and hold timing.
+
+
+What is a Macro?
+Answer:
+A macro is a relatively large pre-designed physical block used in an IC.
+Examples:
+SRAM
+ROM
+PLL
+DSP block
+IP blocks
+Macros are generally handled differently from ordinary standard cells during physical design.
