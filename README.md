@@ -2025,3 +2025,32 @@ Long wires
 Transition violations
 Timing optimization
 However, too many buffers increase area and power.
+
+
+
+What is a High-Fanout Net?
+Answer:
+A high-fanout net is a net that drives a large number of loads.
+Example:
+             ┌── FF1
+             ├── FF2
+Driver ──────┼── FF3
+             ├── FF4
+             └── ...
+High fanout can cause:
+Large capacitance
+Increased delay
+Poor transition
+Common solution: Buffer tree / buffer insertion.
+
+
+How do you fix a Transition Violation?
+Answer:
+A transition violation means a signal is changing too slowly or too quickly relative to the specified limit.
+Common fixes include:
+Upsize the driver
+Insert buffers
+Reduce load
+Improve placement
+Optimize routing
+The appropriate fix depends on whether the problem is caused by the driver, load, or interconnect.
