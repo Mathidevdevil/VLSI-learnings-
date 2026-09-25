@@ -2004,3 +2004,24 @@ Improve pin access
 Adjust routing constraints
 Use higher routing layers where appropriate
 The exact solution depends on where and why congestion occurs.
+
+
+
+What is Cell Upsizing?
+Answer:
+Cell upsizing means replacing a cell with a stronger drive-strength version of the same logic function.
+Example:
+INV_X1 → INV_X2 → INV_X4
+A stronger cell can drive a larger load faster and may improve timing.
+Trade-offs: It can increase area, power, and congestion.
+
+
+Why is Buffer Insertion used?
+Answer:
+Buffers are inserted to improve signal driving capability and control interconnect delay.
+They can help with:
+High fan-out
+Long wires
+Transition violations
+Timing optimization
+However, too many buffers increase area and power.
