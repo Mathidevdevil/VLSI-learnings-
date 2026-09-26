@@ -2186,3 +2186,29 @@ Timing degradation
 Functional problems
 Reliability concerns
 Possible solutions include improving the power distribution network, adding/reinforcing power structures, reducing local current density, or addressing power hotspots.
+
+
+What is a Timing Path?
+Answer:
+A timing path is a path through which a signal travels from a launch point to a capture point.
+Typical register-to-register path:
+Launch FF
+   ↓
+Combinational Logic
+   ↓
+Interconnect
+   ↓
+Capture FF
+STA analyzes such paths to determine whether timing requirements are satisfied.
+
+
+What is WNS?
+Answer:
+WNS = Worst Negative Slack.
+It represents the most negative slack among the paths being analyzed.
+For example:
+Path 1 → +0.20 ns
+Path 2 → -0.10 ns
+Path 3 → -0.35 ns
+WNS = -0.35 ns
+A negative WNS indicates that at least one path has a timing violation.
