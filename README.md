@@ -2153,3 +2153,36 @@ After CTS, the clock network has actual latency and skew.
 The resulting difference in clock arrival times can expose new hold violations.
 Simple idea:
 CTS changes the real clock arrival relationship → timing changes → hold violations may appear.
+
+
+How do you debug a negative-slack path?
+Answer:
+First, identify:
+Startpoint
+Endpoint
+Launch clock
+Capture clock
+Data arrival time
+Required arrival time
+Slack
+Then inspect:
+Clock path
+Cell delays
+Net delays
+Logic depth
+Fanout
+Transition
+Capacitance
+Routing
+Finally, determine whether the dominant problem is logic, cell delay, interconnect, or clock timing.
+
+
+What happens if IR drop is high?
+Answer:
+High IR drop means the voltage delivered to cells can be lower than intended.
+This can cause:
+Increased cell delay
+Timing degradation
+Functional problems
+Reliability concerns
+Possible solutions include improving the power distribution network, adding/reinforcing power structures, reducing local current density, or addressing power hotspots.
