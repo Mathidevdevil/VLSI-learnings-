@@ -2236,3 +2236,26 @@ A timing violation occurs when a path fails to meet its required timing constrai
 The two major sequential timing violations are:
 Setup violation → data arrives too late
 Hold violation → data arrives too early
+
+
+
+Why does routing affect timing?
+Answer:
+Routing determines the physical interconnect between cells.
+Long or heavily loaded wires can increase:
+Resistance
+Capacitance
+Propagation delay
+Crosstalk
+Therefore, routing optimization is important for timing closure.
+
+
+What is ECO?
+Answer:
+ECO = Engineering Change Order.
+An ECO is a targeted modification made to an existing design, often late in the implementation cycle, to fix issues without restarting the entire design flow.
+Examples:
+Timing fixes
+Functional fixes
+Power optimization
+Metal-only changes, where applicable
