@@ -2212,3 +2212,27 @@ Path 2 → -0.10 ns
 Path 3 → -0.35 ns
 WNS = -0.35 ns
 A negative WNS indicates that at least one path has a timing violation.
+
+
+
+What is TNS?
+Answer:
+TNS = Total Negative Slack.
+It represents the sum of negative slack values across the violating paths under the relevant analysis.
+Example:
+Path 1 = -0.10 ns
+Path 2 = -0.20 ns
+Path 3 = -0.30 ns
+
+TNS = -0.60 ns
+Memory:
+WNS → Worst single violation
+TNS → Total negative slack
+
+
+What is a Timing Violation?
+Answer:
+A timing violation occurs when a path fails to meet its required timing constraint.
+The two major sequential timing violations are:
+Setup violation → data arrives too late
+Hold violation → data arrives too early
