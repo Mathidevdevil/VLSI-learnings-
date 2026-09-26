@@ -2259,3 +2259,24 @@ Timing fixes
 Functional fixes
 Power optimization
 Metal-only changes, where applicable
+
+
+What is MCMM?
+Answer:
+MCMM = Multi-Corner Multi-Mode.
+It means analyzing the design across:
+Multiple operating modes
+Multiple process/voltage/temperature corners
+A design must satisfy the required constraints across the relevant scenarios.
+
+What is Signoff?
+Answer:
+Signoff is the final stage where the design is checked against the required timing, power, physical, and reliability criteria before manufacturing release.
+Typical checks can include:
+STA
+DRC
+LVS
+IR drop
+Electromigration
+Signal integrity
+Other technology-specific signoff checks
