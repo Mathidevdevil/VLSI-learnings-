@@ -2129,3 +2129,27 @@ What is an Endcap Cell?
 Answer:
 Endcap cells are placed at the ends of standard-cell rows to satisfy boundary-related physical and well/implant requirements.
 They help ensure the standard-cell layout meets technology-specific design rules.
+
+
+
+Timing is failing after routing. What will you check?
+Answer:
+I would check:
+Which paths have negative slack.
+Whether the violation is setup or hold.
+Cell delay vs net delay.
+Logic depth of the critical path.
+Routing length and congestion.
+Clock skew and clock latency.
+Transition and capacitance violations.
+Whether the correct timing constraints are applied.
+Then I would choose an appropriate optimization such as cell sizing, buffering, placement optimization, or routing optimization.
+
+
+Why can hold violations increase after CTS?
+Answer:
+Before CTS, clock timing may be based on ideal or estimated clocks.
+After CTS, the clock network has actual latency and skew.
+The resulting difference in clock arrival times can expose new hold violations.
+Simple idea:
+CTS changes the real clock arrival relationship → timing changes → hold violations may appear.
