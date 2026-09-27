@@ -2309,3 +2309,38 @@ Easy memory:
 
 NMOS → Pull Down → 0
 PMOS → Pull Up → 1
+
+
+What is Threshold Voltage?
+
+Answer:
+Threshold voltage (Vth) is the approximate minimum gate-to-source voltage required to form a conducting channel and turn a MOSFET on significantly.
+
+For NMOS:
+
+VGS > Vth → device conducts
+
+The exact behavior depends on the operating region and technology.
+
+What are the operating regions of a MOSFET?
+For an NMOS, the commonly discussed regions are:
+Cutoff
+Linear/Triode
+Saturation
+Cutoff
+
+VGS < Vth
+
+The transistor is essentially OFF.
+
+Linear/Triode
+
+VGS > Vth and VDS < VGS − Vth
+
+The transistor behaves approximately like a voltage-controlled resistor.
+
+Saturation
+
+VGS > Vth and VDS ≥ VGS − Vth
+
+The channel is pinched off near the drain and the device operates in the saturation region.
