@@ -2280,3 +2280,32 @@ IR drop
 Electromigration
 Signal integrity
 Other technology-specific signoff checks
+
+What is a MOSFET?
+
+Answer:
+MOSFET stands for Metal-Oxide-Semiconductor Field-Effect Transistor.
+
+It is a voltage-controlled device used extensively in CMOS circuits.
+
+The main terminals are:
+
+Gate (G)
+Source (S)
+Drain (D)
+Body/Bulk (B)
+
+The gate voltage controls the current flowing between source and drain.
+
+
+What is the difference between NMOS and PMOS?
+NMOS	PMOS
+N-channel device	P-channel device
+Turns ON with sufficiently high gate voltage relative to source	Turns ON with sufficiently low gate voltage relative to source
+Mainly used for pull-down	Mainly used for pull-up
+Electrons are majority carriers	Holes are majority carriers
+
+Easy memory:
+
+NMOS → Pull Down → 0
+PMOS → Pull Up → 1
