@@ -2367,3 +2367,15 @@ Velocity saturation
 Increased leakage
 Channel-length modulation
 These effects influence power, performance, and reliability.
+
+
+What is DIBL?
+DIBL = Drain-Induced Barrier Lowering.
+In a short-channel MOSFET, increasing the drain voltage can lower the potential barrier near the source, making the transistor easier to turn on.
+One consequence is a reduction in the effective threshold voltage at higher drain voltage.
+
+
+Why is PMOS generally larger than NMOS in CMOS logic?
+PMOS typically has lower carrier mobility because hole mobility is lower than electron mobility.
+To obtain comparable drive strength, PMOS devices are often made wider than NMOS devices.
+This is technology- and design-dependent, but it is a common CMOS sizing principle.
