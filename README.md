@@ -2379,3 +2379,23 @@ Why is PMOS generally larger than NMOS in CMOS logic?
 PMOS typically has lower carrier mobility because hole mobility is lower than electron mobility.
 To obtain comparable drive strength, PMOS devices are often made wider than NMOS devices.
 This is technology- and design-dependent, but it is a common CMOS sizing principle.
+
+
+
+Why is CMOS called "Complementary"?
+CMOS uses complementary pairs of PMOS and NMOS networks.
+When the pull-up network conducts, the pull-down network is ideally off, and vice versa.
+This complementary operation enables very low static power in an ideal CMOS logic gate.
+
+What is CMOS Scaling?
+CMOS scaling means reducing transistor dimensions and, historically, adjusting voltage and other parameters to increase transistor density and improve performance.
+Benefits can include:
+Higher transistor density
+Shorter interconnect/device dimensions
+Potentially higher performance
+Lower energy per operation in some generations
+However, scaling also introduces challenges such as:
+Leakage
+Short-channel effects
+Variability
+Power density
