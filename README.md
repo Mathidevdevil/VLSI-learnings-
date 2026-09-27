@@ -2349,3 +2349,21 @@ What is Body Effect?
 Body effect is the change in a MOSFET's threshold voltage caused by a change in the voltage between the source and body.
 For an NMOS, increasing the source-to-body voltage generally increases the threshold voltage.
 This effect is important in circuits where the source and body are not at the same potential.
+
+
+
+What is Velocity Saturation?
+At high electric fields, carrier velocity stops increasing proportionally with electric field and approaches a saturation value.
+This phenomenon is called velocity saturation.
+It becomes particularly important in short-channel MOSFETs and affects transistor current and delay.
+
+
+What are Short-Channel Effects?
+When MOSFET dimensions become very small, effects that are less significant in long-channel devices become important.
+Examples include:
+Drain-Induced Barrier Lowering (DIBL)
+Threshold-voltage roll-off
+Velocity saturation
+Increased leakage
+Channel-length modulation
+These effects influence power, performance, and reliability.
