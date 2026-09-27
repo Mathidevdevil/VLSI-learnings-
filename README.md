@@ -2328,19 +2328,24 @@ Cutoff
 Linear/Triode
 Saturation
 Cutoff
-
 VGS < Vth
-
 The transistor is essentially OFF.
-
 Linear/Triode
-
 VGS > Vth and VDS < VGS − Vth
-
 The transistor behaves approximately like a voltage-controlled resistor.
-
 Saturation
-
 VGS > Vth and VDS ≥ VGS − Vth
-
 The channel is pinched off near the drain and the device operates in the saturation region.
+
+
+What is Channel Length Modulation?
+In an ideal MOSFET, drain current in saturation would be independent of VDS.
+In a real MOSFET, increasing VDS can effectively shorten the channel, causing the drain current to increase slightly.
+This effect is called Channel Length Modulation (CLM).
+It causes the transistor to have finite output resistance.
+
+
+What is Body Effect?
+Body effect is the change in a MOSFET's threshold voltage caused by a change in the voltage between the source and body.
+For an NMOS, increasing the source-to-body voltage generally increases the threshold voltage.
+This effect is important in circuits where the source and body are not at the same potential.
