@@ -2474,3 +2474,7 @@ It is commonly measured between specified percentages of the signal swing, such 
 What is Fall Time?
 Fall time is the time taken for the output to transition from a high voltage level to a low voltage level.
 It is commonly measured from 90% to 10% of the signal swing.
+
+
+
+
