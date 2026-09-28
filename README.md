@@ -2425,13 +2425,9 @@ Y = NOT A
 
 
 What is VTC?
-
 VTC = Voltage Transfer Characteristic.
-
 It is a graph showing how the output voltage changes with respect to the input voltage.
-
 For a CMOS inverter:
-
 Vout
  ↑
 VDD ────────┐
@@ -2442,8 +2438,27 @@ VDD ────────┐
        0       VDD
 
 The VTC helps determine:
-
 Switching behavior
 Noise margins
 Switching threshold
 Gain
+
+
+
+What is Switching Threshold?
+The switching threshold, commonly represented as VM, is the input voltage at which the inverter transitions between logic states.
+At the approximate switching point:
+NMOS current ≈ PMOS current
+The exact value depends on transistor characteristics and sizing.
+
+
+What is Noise Margin?
+
+Noise margin represents how much unwanted noise a digital signal can tolerate without being incorrectly interpreted.
+Two important quantities are:
+NMH → High-level noise margin
+NML → Low-level noise margin
+For standard definitions:
+NMH = VOH − VIH
+NML = VIL − VOL
+Higher noise margins generally provide better noise immunity.
