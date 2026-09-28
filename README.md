@@ -2493,4 +2493,18 @@ Higher fan-out means higher capacitive load.
 Higher load generally causes:
 More capacitance → More delay
 
+What is Dynamic Power in CMOS?
+Dynamic power is mainly associated with charging and discharging capacitances when signals switch.
+A commonly used approximation is:
+Pdynamic = αCV²f
+where:
+α = switching activity
+C = capacitance
+V = supply voltage
+f = frequency
 
+
+Why does CMOS have low static power?
+In an ideal CMOS inverter at a stable logic level, one transistor is ON while the complementary transistor is OFF.
+Therefore, there is ideally no direct DC path from VDD to GND.
+However, real CMOS circuits have leakage currents, so static power is not exactly zero.
