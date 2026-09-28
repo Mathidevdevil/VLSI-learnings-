@@ -2476,5 +2476,21 @@ Fall time is the time taken for the output to transition from a high voltage lev
 It is commonly measured from 90% to 10% of the signal swing.
 
 
+What happens when transistor width increases?
+
+Increasing transistor width generally:
+Increases drive strength
+Can reduce certain propagation delays
+Increases gate capacitance
+Increases area
+Can increase dynamic power
+So transistor sizing involves a performance, power, and area trade-off.
+
+What is Fan-out in CMOS?
+
+Fan-out is the number of similar gate inputs that one output can drive while maintaining acceptable performance.
+Higher fan-out means higher capacitive load.
+Higher load generally causes:
+More capacitance → More delay
 
 
