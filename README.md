@@ -2399,3 +2399,51 @@ Leakage
 Short-channel effects
 Variability
 Power density
+
+
+What is a CMOS inverter?
+
+A CMOS inverter consists of one PMOS and one NMOS connected together.
+
+        VDD
+         |
+       PMOS
+         |
+         +---- Y
+         |
+       NMOS
+         |
+        GND
+
+       Gates ← Input
+Input 0 → PMOS ON, NMOS OFF → Output 1
+Input 1 → PMOS OFF, NMOS ON → Output 0
+
+Therefore:
+
+Y = NOT A
+
+
+What is VTC?
+
+VTC = Voltage Transfer Characteristic.
+
+It is a graph showing how the output voltage changes with respect to the input voltage.
+
+For a CMOS inverter:
+
+Vout
+ ↑
+VDD ────────┐
+            │
+            │
+            └──────
+ 0 ─────────────────→ Vin
+       0       VDD
+
+The VTC helps determine:
+
+Switching behavior
+Noise margins
+Switching threshold
+Gain
