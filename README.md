@@ -2462,3 +2462,15 @@ For standard definitions:
 NMH = VOH − VIH
 NML = VIL − VOL
 Higher noise margins generally provide better noise immunity.
+
+
+
+What is Rise Time?
+
+Rise time is the time taken for the output to transition from a low voltage level to a high voltage level.
+It is commonly measured between specified percentages of the signal swing, such as 10% to 90%.
+
+
+What is Fall Time?
+Fall time is the time taken for the output to transition from a high voltage level to a low voltage level.
+It is commonly measured from 90% to 10% of the signal swing.
