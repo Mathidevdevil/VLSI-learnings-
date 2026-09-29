@@ -2508,3 +2508,26 @@ Why does CMOS have low static power?
 In an ideal CMOS inverter at a stable logic level, one transistor is ON while the complementary transistor is OFF.
 Therefore, there is ideally no direct DC path from VDD to GND.
 However, real CMOS circuits have leakage currents, so static power is not exactly zero.
+
+
+What is a Half Adder?
+A Half Adder adds two 1-bit binary inputs A and B.
+Outputs:
+Sum: S = A ⊕ B
+Carry: C = A · B
+A	B	Sum	Carry
+0	0	0	0
+0	1	1	0
+1	0	1	0
+1	1	0	1
+
+
+What is a Full Adder?
+A Full Adder adds three 1-bit inputs:
+A + B + Cin
+Outputs:
+Sum:
+S = A ⊕ B ⊕ Cin
+Carry:
+Cout = AB + ACin + BCin
+A full adder can handle the carry coming from the previous stage.
