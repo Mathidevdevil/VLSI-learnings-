@@ -2576,3 +2576,26 @@ Difference:
 D = A ⊕ B
 Borrow:
 Borrow = A̅B
+
+
+
+What is a Full Subtractor?
+A full subtractor subtracts:
+A − B − Bin
+where Bin is the borrow input.
+Outputs:
+Difference
+Borrow out
+Difference:
+D = A ⊕ B ⊕ Bin
+It is used to build multi-bit subtraction circuits.
+
+
+What is a Comparator?
+A digital comparator compares two binary values.
+For two inputs A and B, it determines:
+A > B
+A = B
+A < B
+For a 1-bit equality comparison:
+A = B when both inputs are the same, which can be detected using XNOR.
