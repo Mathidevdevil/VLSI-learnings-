@@ -2531,3 +2531,21 @@ S = A ⊕ B ⊕ Cin
 Carry:
 Cout = AB + ACin + BCin
 A full adder can handle the carry coming from the previous stage.
+
+
+Half Adder vs Full Adder?
+Half Adder	Full Adder
+2 inputs	3 inputs
+No carry input	Has Cin
+A, B	A, B, Cin
+Simple addition	Used for multi-bit addition
+
+
+What is a Ripple Carry Adder?
+A Ripple Carry Adder (RCA) connects multiple full adders.
+A0,B0 → FA → C1             ↓
+A1,B1 → FA → C2             ↓
+A2,B2 → FA → C3             ↓
+A3,B3 → FA → Cout
+The carry must propagate from one stage to the next.
+Main disadvantage: Carry propagation can make the adder slow as the number of bits increases.
