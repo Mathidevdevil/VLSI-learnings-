@@ -2634,3 +2634,9 @@ MUX	Select lines
 8:1	3
 16:1	4
 32:1	5
+
+
+
+Can a MUX implement Boolean functions?
+A multiplexer can be configured to implement Boolean functions by connecting its data inputs to 0, 1, variables, or complemented variables and using other variables as select inputs.
+This is a common digital-design interview problem.
