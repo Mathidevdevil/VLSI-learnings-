@@ -2549,3 +2549,16 @@ A2,B2 → FA → C3             ↓
 A3,B3 → FA → Cout
 The carry must propagate from one stage to the next.
 Main disadvantage: Carry propagation can make the adder slow as the number of bits increases.
+
+
+What is a Carry Look-Ahead Adder?
+A Carry Look-Ahead Adder (CLA) improves addition speed by calculating carry signals using generate and propagate logic, rather than waiting for each carry to ripple through every stage.
+Common definitions:
+Gi = Ai · Bi
+Pi = Ai ⊕ Bi
+Then:
+Ci+1 = Gi + PiCi
+Advantage: Faster carry computation.
+Trade-off: More complex hardware.
+
+
