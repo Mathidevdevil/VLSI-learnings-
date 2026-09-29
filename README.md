@@ -2599,3 +2599,12 @@ A = B
 A < B
 For a 1-bit equality comparison:
 A = B when both inputs are the same, which can be detected using XNOR.
+
+
+
+What is a Priority Encoder?
+A priority encoder produces the binary code corresponding to the highest-priority active input.
+Unlike a basic encoder, it can handle multiple active inputs according to a predefined priority.
+Example priority:
+D3 > D2 > D1 > D0
+If both D3 and D1 are 1, the output represents D3.
