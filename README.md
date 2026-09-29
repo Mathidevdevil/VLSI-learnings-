@@ -2561,4 +2561,18 @@ Ci+1 = Gi + PiCi
 Advantage: Faster carry computation.
 Trade-off: More complex hardware.
 
+RCA vs CLA
+RCA	CLA
+Simple	More complex
+Smaller hardware	More carry logic
+Carry ripples stage by stage	Carry calculated using G/P logic
+Slower for large widths	Faster carry computation
 
+What is a Half Subtractor?
+A half subtractor performs:
+A − B
+Outputs:
+Difference:
+D = A ⊕ B
+Borrow:
+Borrow = A̅B
