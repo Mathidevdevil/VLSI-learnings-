@@ -2640,3 +2640,25 @@ MUX	Select lines
 Can a MUX implement Boolean functions?
 A multiplexer can be configured to implement Boolean functions by connecting its data inputs to 0, 1, variables, or complemented variables and using other variables as select inputs.
 This is a common digital-design interview problem.
+
+
+What is the difference between synchronous and asynchronous reset?
+Synchronous reset:
+The reset affects the flip-flop only at the active clock edge.
+always @(posedge clk) begin
+    if (reset)
+        q <= 1'b0;
+    else
+        q <= d;
+end
+Asynchronous reset:
+The reset can affect the flip-flop independently of the clock.
+always @(posedge clk or posedge reset) begin
+    if (reset)
+        q <= 1'b0;
+    else
+        q <= d;
+end
+Memory:
+Synchronous → waits for clock
+Asynchronous → does not wait for clock
