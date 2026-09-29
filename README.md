@@ -2608,3 +2608,16 @@ Unlike a basic encoder, it can handle multiple active inputs according to a pred
 Example priority:
 D3 > D2 > D1 > D0
 If both D3 and D1 are 1, the output represents D3.
+
+
+
+What is a Decoder used for?
+A decoder converts an n-bit input into up to 2ⁿ output lines.
+For example:
+2-to-4 decoder
+2 inputs → 4 outputs
+Applications include:
+Memory address decoding
+Chip selection
+Instruction decoding
+Control logic
