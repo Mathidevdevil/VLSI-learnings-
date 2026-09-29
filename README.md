@@ -2621,3 +2621,16 @@ Memory address decoding
 Chip selection
 Instruction decoding
 Control logic
+
+
+
+How many select lines are required for a MUX?
+For a MUX with N inputs:
+Number of select lines = log₂(N)
+Examples:
+MUX	Select lines
+2:1	1
+4:1	2
+8:1	3
+16:1	4
+32:1	5
