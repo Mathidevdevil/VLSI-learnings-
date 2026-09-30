@@ -2662,3 +2662,44 @@ end
 Memory:
 Synchronous → waits for clock
 Asynchronous → does not wait for clock
+
+
+What is Floorplanning?
+Floorplanning is the process of deciding the overall physical organization of a chip, including the placement of major blocks, I/O locations, power structures, and other physical constraints.
+Main goals:
+Good timing
+Lower congestion
+Efficient area utilization
+Proper power distribution
+
+
+What is Standard Cell Placement?
+Placement determines the physical locations of standard cells inside the core area while trying to optimize timing, congestion, and power.
+Core Area
+┌─────────────────────┐
+│ ▣ ▣ ▣   ▣ ▣ ▣      │
+│   ▣ ▣ ▣ ▣           │
+│ ▣   ▣ ▣   ▣ ▣       │
+└─────────────────────┘
+
+
+What is Utilization?
+Utilization indicates how much of the available core area is occupied by standard cells.
+A simplified formula is:
+Utilization = Cell Area / Available Core Area × 100
+Very high utilization can increase routing congestion and make timing closure more difficult.
+
+
+
+What is Congestion?
+Congestion occurs when too many routing connections compete for the available routing resources in a particular region.
+High congestion can cause:
+Routing difficulties
+Timing degradation
+DRC violations
+
+
+What is IR Drop?
+IR drop is the voltage drop caused by current flowing through the resistance of the power distribution network.
+V = I × R
+Excessive IR drop can reduce the voltage available to cells and may affect circuit performance and reliability.
