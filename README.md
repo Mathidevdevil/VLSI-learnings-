@@ -2703,3 +2703,57 @@ What is IR Drop?
 IR drop is the voltage drop caused by current flowing through the resistance of the power distribution network.
 V = I × R
 Excessive IR drop can reduce the voltage available to cells and may affect circuit performance and reliability.
+
+
+
+
+What is Electromigration (EM)?
+Electromigration is the movement of metal atoms caused by high current density through interconnects.
+Over time, excessive EM can cause:
+Open circuits
+Shorts
+Reliability problems
+Therefore, power and signal wires must satisfy current-density limits.
+
+
+What is Timing Closure?
+Timing closure is the process of making a design satisfy its required timing constraints, especially setup and hold requirements.
+Typical methods include:
+Cell sizing
+Buffer insertion
+Logic optimization
+Placement optimization
+Clock optimization
+Routing optimization
+
+
+How can you fix a Setup Violation?
+Common techniques include:
+Reduce combinational path delay
+Upsize cells
+Optimize/restructure logic
+Reduce wire delay
+Improve placement
+Use appropriate lower-Vt cells where allowed
+Optimize the clock path
+Goal: Make data arrive earlier at the destination register.
+
+
+
+How can you fix a Hold Violation?
+Common techniques include:
+Add delay/buffers to the data path
+Downsize cells where appropriate
+Increase data-path delay
+Optimize clock skew carefully
+Goal: Prevent new data from reaching the destination register too early.
+Easy memory:
+Setup violation → Data is too late → Speed up data path
+Hold violation → Data is too early → Slow down data path
+
+
+What are DRC and LVS?
+DRC — Design Rule Check
+Checks whether the physical layout follows the semiconductor foundry's design rules, such as spacing and width requirements.
+LVS — Layout Versus Schematic
+Checks whether the extracted layout connectivity matches the intended circuit/netlist.
