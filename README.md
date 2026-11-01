@@ -1,4 +1,4 @@
-# VLSI-learnings-
+by# VLSI-learnings-
 ## Day 1 - Logic Gates
 
 ### Topics Learned
@@ -2776,3 +2776,12 @@ Metal 2 ─────────
         │
 Metal 1 ─────────
 It allows signals or power to move between metal layers.
+
+
+
+
+Both are used for conditional logic.
+if-else case
+Checks conditions sequentially Matches an expression against alternatives
+Useful for priority logic Useful for selection logic
+Can describe priority encoders Commonly used for MUX and FSM logig
