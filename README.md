@@ -2785,3 +2785,130 @@ if-else case
 Checks conditions sequentially Matches an expression against alternatives
 Useful for priority logic Useful for selection logic
 Can describe priority encoders Commonly used for MUX and FSM logig
+
+
+
+
+What is the difference between if-else and case?
+Answer:
+
+Both are used for conditional logic.
+if-else	case
+Checks conditions sequentially	Matches an expression against alternatives
+Useful for priority logic	Useful for selection logic
+Can describe priority encoders	Commonly used for MUX and FSM logic
+
+Example:
+always @(*) begin
+    if (sel == 2'b00)
+        y = a;
+    else if (sel == 2'b01)
+        y = b;
+    else
+        y = c;
+end
+
+
+
+6. ⭐ What is a Parameter in Verilog?
+Answer:
+
+A parameter is a constant used to make a module configurable and reusable.
+
+Example:
+module counter #(
+    parameter WIDTH = 8
+)(
+    input clk,
+    output reg [WIDTH-1:0] count
+);
+
+always @(posedge clk)
+    count <= count + 1'b1;
+
+endmodule
+
+
+Here, the counter width can be changed without rewriting the module.
+
+7. ⭐ What is a Generate Block?
+Answer:
+
+A generate block is used to create repetitive hardware structures during elaboration.
+
+Example:
+module and_array #(
+    parameter N = 4
+)(
+    input  [N-1:0] a,
+    input  [N-1:0] b,
+    output [N-1:0] y
+);
+
+genvar i;
+
+generate
+    for (i = 0; i < N; i = i + 1) begin
+        assign y[i] = a[i] & b[i];
+    end
+endgenerate
+
+endmodule
+
+
+It creates multiple AND gates based on N.
+
+8. ⭐ What is the difference between case, casex, and casez?
+Answer:
+- case: Exact 4-state matching.
+- casex: Treats X and Z as wildcards.
+- casez: Treats Z and ? as wildcards.
+Important interview point: Avoid casex in synthesizable RTL because it can hide unknown-value bugs. Prefer case or carefully used casez.
+
+9. ⭐ What is a Race Condition in Verilog?
+Answer:
+
+A race condition occurs when the simulation result depends on the order in which multiple procedural blocks execute at the same simulation time.
+
+Example:
+always @(posedge clk)
+    q1 = d;
+
+always @(posedge clk)
+    q2 = q1;
+
+
+Using blocking assignments in multiple clocked processes can cause simulation-order-dependent behavior.
+
+Solution: Use non-blocking assignments for clocked sequential logic.
+
+10. ⭐ What is a Testbench?
+Answer:
+
+A testbench is a verification environment used to apply input signals to a design and check its outputs.
+
+Example:
+module tb;
+
+reg a, b;
+wire y;
+
+and_gate dut (
+    .a(a),
+    .b(b),
+    .y(y)
+);
+
+initial begin
+    a = 0; b = 0;
+    #10 a = 0; b = 1;
+    #10 a = 1; b = 0;
+    #10 a = 1; b = 1;
+    #10 $finish;
+end
+
+endmodule
+
+
+A testbench helps verify whether the design behaves as expected.
+
