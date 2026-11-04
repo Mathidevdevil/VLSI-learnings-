@@ -2974,3 +2974,83 @@ T_{required}=T_{period}+T_{capture}-T_{setup}
 \]
 
 Clock uncertainty and other timing adjustments must also be considered in a real timing report.
+
+
+
+
+6. ⭐ What is Slack?
+Answer:
+
+Slack is the difference between required arrival time and actual arrival time.
+\[
+Slack=T_{required}-T_{arrival}
+\]
+
+Slack	Meaning
+Positive	Timing passes
+Zero	Exactly meets timing
+Negative	Timing violation
+
+Example:
+
+Required time = 10 ns
+
+Arrival time = 8 ns
+
+Slack = 10 − 8 = +2 ns
+
+7. ⭐ What is WNS?
+Answer:
+
+WNS stands for Worst Negative Slack.
+
+It represents the most negative slack among the analyzed timing paths.
+
+Example:
+Path	Slack
+Path 1	-0.2 ns
+Path 2	-0.5 ns
+Path 3	-0.1 ns
+
+WNS = -0.5 ns
+
+8. ⭐ What is TNS?
+Answer:
+
+TNS stands for Total Negative Slack.
+
+It is the sum of negative slack values across violating paths.
+
+Example:
+- Path 1 = -0.2 ns
+- Path 2 = -0.5 ns
+- Path 3 = -0.1 ns
+\[
+TNS=-0.2-0.5-0.1=-0.8ns
+\]
+
+Remember:
+- WNS → Worst violation.
+- TNS → Total violation.
+
+9. ⭐ What is Clock Skew and how does it affect timing?
+Answer:
+
+Clock skew is the difference in clock arrival time between the launch and capture registers.
+\[
+T_{skew}=T_{capture}-T_{launch}
+\]
+
+- Positive skew (capture clock arrives later) generally helps setup timing.
+- Negative skew (capture clock arrives earlier) generally hurts setup timing.
+- The effects are generally reversed for hold timing.
+
+10. ⭐ What is Clock Latency?
+Answer:
+
+Clock latency is the time taken by a clock signal to reach a sequential element from its defined clock source.
+
+Two types:
+1. Source latency
+2. Network latency
+It is important for accurate timing analysis.
