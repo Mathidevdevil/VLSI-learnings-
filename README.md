@@ -2912,3 +2912,65 @@ endmodule
 
 A testbench helps verify whether the design behaves as expected.
 
+What is Static Timing Analysis (STA)?
+Answer:
+
+STA is a method used to verify whether a digital circuit meets its timing requirements without applying simulation test vectors.
+
+It checks:
+- Setup time
+- Hold time
+- Clock skew
+- Clock latency
+- Propagation delay
+- Timing slack
+
+2. ⭐ What is a Setup Time Violation?
+Answer:
+
+A setup violation occurs when data arrives at the destination flip-flop too late to satisfy its setup-time requirement before the active clock edge.
+
+Common solutions:
+- Upsize cells.
+- Reduce logic depth.
+- Insert buffers where appropriate.
+- Optimize placement and routing.
+- Improve clock skew.
+
+3. ⭐ What is a Hold Time Violation?
+Answer:
+
+A hold violation occurs when new data reaches the destination flip-flop too early, before the required hold interval has elapsed after the clock edge.
+
+Common solutions:
+- Insert delay buffers.
+- Increase data-path delay.
+- Downsize cells where appropriate.
+- Optimize clock skew.
+
+4. ⭐ What is Arrival Time?
+Answer:
+
+Arrival time is the time at which data reaches a particular point in a timing path.
+
+For a simple register-to-register path:
+\[
+T_{arrival}=T_{launch}+T_{cq}+T_{comb}
+\]
+
+Where:
+- \(T_{launch}\) = launch clock arrival time
+- \(T_{cq}\) = clock-to-Q delay
+- \(T_{comb}\) = combinational path delay
+
+5. ⭐ What is Required Time?
+Answer:
+
+Required time is the latest time by which data must arrive at the destination to satisfy the timing requirement.
+
+For a simplified setup calculation:
+\[
+T_{required}=T_{period}+T_{capture}-T_{setup}
+\]
+
+Clock uncertainty and other timing adjustments must also be considered in a real timing report.
