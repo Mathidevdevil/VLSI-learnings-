@@ -3054,3 +3054,104 @@ Two types:
 1. Source latency
 2. Network latency
 It is important for accurate timing analysis.
+
+
+11. ⭐ What is a Critical Path?
+Answer:
+
+A critical path is a path with the smallest setup slack among the analyzed paths, often determining the maximum achievable operating frequency.
+
+Example:
+FF1
+ |
+Gate 1
+ |
+Gate 2
+ |
+Gate 3
+ |
+FF2
+
+
+A large combinational delay can make this path critical.
+
+12. ⭐ What is Clock Uncertainty?
+Answer:
+
+Clock uncertainty is a timing margin that accounts for clock-related variations such as jitter and skew uncertainty.
+
+It reduces the timing budget available for data transfer.
+
+Numerical Problems — Very Important
+13. ⭐ Calculate Setup Slack
+Given:
+- Clock period = 10 ns
+- Clock-to-Q delay = 1 ns
+- Combinational delay = 6 ns
+- Setup time = 1 ns
+- Clock skew = 0 ns
+- Clock uncertainty = 0 ns
+Calculate setup slack.
+
+Solution:
+
+Arrival time:
+\[
+1+6=7ns
+\]
+
+Required time:
+\[
+10-1=9ns
+\]
+
+Slack:
+\[
+9-7=\boxed{+2ns}
+\]
+
+Setup timing passes
+
+14. ⭐ Calculate Hold Slack
+Given:
+- Minimum clock-to-Q delay = 0.2 ns
+- Minimum combinational delay = 0.3 ns
+- Hold time = 0.2 ns
+- Clock skew = 0 ns
+Calculate hold slack.
+
+Solution:
+
+Data arrival:
+\[
+0.2+0.3=0.5ns
+\]
+
+Required hold time:
+\[
+0.2ns
+\]
+
+Hold slack:
+\[
+0.5-0.2=\boxed{+0.3ns}
+\]
+
+Hold timing passes
+
+15. ⭐ What happens when clock frequency increases?
+Answer:
+
+When clock frequency increases, clock period decreases.
+\[
+T=\frac{1}{f}
+\]
+
+Example:
+Frequency	Clock period
+100 MHz	10 ns
+200 MHz	5 ns
+500 MHz	2 ns
+1 GHz	1 ns
+
+A shorter clock period gives less time for data propagation and can make setup timing harder to meet.
