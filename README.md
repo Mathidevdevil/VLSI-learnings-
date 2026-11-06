@@ -3155,3 +3155,81 @@ Frequency	Clock period
 1 GHz	1 ns
 
 A shorter clock period gives less time for data propagation and can make setup timing harder to meet.
+
+
+
+1. What is Physical Design in VLSI?
+Answer:
+Physical Design is the process of converting a synthesized gate-level netlist into a physical chip layout that can be manufactured.
+
+The major stages are:
+
+Floorplanning → Power Planning → Placement → CTS → Routing → Physical Verification → GDSII
+
+The main objectives are to achieve:
+- Timing closure
+- Low power
+- Low area
+- Good signal integrity
+- DRC/LVS clean layout
+2. Explain the RTL-to-GDSII flow.
+Answer:
+
+The typical flow is:
+
+RTL → Synthesis → Floorplanning → Power Planning → Placement → CTS → Routing → STA → Physical Verification → GDSII
+Step-by-step:
+1. RTL: Design is described using Verilog/SystemVerilog.
+2. Synthesis: RTL is converted into a gate-level netlist.
+3. Floorplanning: Decide chip/core dimensions and macro locations.
+4. Power planning: Create power rings, straps and power distribution.
+5. Placement: Place standard cells inside the core.
+6. CTS: Build the clock distribution network.
+7. Routing: Connect all cells using metal layers.
+8. STA: Check setup and hold timing.
+9. Physical verification: Check DRC, LVS, antenna and other violations.
+10. GDSII: Final physical layout is generated for manufacturing.
+3. What are the inputs to Physical Design?
+Answer:
+
+Common inputs include:
+- Gate-level netlist
+- Technology files
+- LEF files
+- Liberty .lib files
+- SDC constraints
+- UPF/CPF for power intent, when applicable
+- Timing libraries
+- Physical design rules
+- Macro/IP information
+4. What is a standard cell?
+Answer:
+
+A standard cell is a pre-designed logic building block with a fixed height and characterized timing/power information.
+
+Examples include:
+- AND
+- OR
+- NAND
+- NOR
+- INV
+- Buffer
+- Flip-flop
+- MUX
+Standard cells are placed in rows during physical design.
+Floorplanning
+5. What is floorplanning?
+Answer:
+
+Floorplanning is the stage where we decide the physical organization of the chip.
+
+We determine:
+- Die size
+- Core size
+- Aspect ratio
+- Standard-cell area
+- Macro locations
+- I/O locations
+- Power structure
+- Placement blockages
+A good floorplan helps reduce congestion and timing problems.
