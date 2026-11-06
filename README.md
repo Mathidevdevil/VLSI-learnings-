@@ -3508,3 +3508,59 @@ Examples:
 - Via rules
 - Enclosure rules
 - Short circuits
+
+
+31. What is LVS?
+Answer:
+
+LVS stands for Layout Versus Schematic.
+
+It verifies whether the physical layout corresponds correctly to the intended circuit/netlist.
+
+In a digital flow, LVS helps ensure that the final physical connectivity matches the design intent.
+32. What is an antenna violation?
+Answer:
+
+An antenna violation occurs when a long piece of metal connected to a gate accumulates charge during fabrication and can potentially damage the gate oxide.
+
+Common fixes include:
+- Antenna diodes
+- Metal layer changes
+- Routing modifications
+Power
+33. What are the types of power consumption?
+Answer:
+
+The major categories are:
+1. Dynamic power
+2. Short-circuit power
+3. Leakage/static power
+A commonly used dynamic-power relationship is:
+\[
+P = \alpha C V^2 f
+\]
+where:
+- α = switching activity
+- C = capacitance
+- V = voltage
+- f = frequency
+34. What is IR drop?
+Answer:
+
+IR drop is the voltage drop caused by current flowing through the resistance of the power distribution network.
+
+Using Ohm's law:
+\[
+V = IR
+\]
+Excessive IR drop can reduce cell performance and cause timing or functional problems.
+35. What is electromigration?
+Answer:
+
+Electromigration is the movement of metal atoms caused by high current density over time.
+
+It can eventually cause:
+- Open circuits
+- Reliability problems
+- Metal degradation
+It is controlled by ensuring current density stays within technology limits.
