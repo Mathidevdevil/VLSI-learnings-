@@ -3295,3 +3295,60 @@ The placement tool tries to optimize:
 - Congestion
 - Power
 - Density
+
+
+11. What is global placement?
+Answer:
+
+Global placement determines approximate locations for cells while optimizing wirelength, timing and congestion.
+
+The cells may temporarily overlap during this stage.
+12. What is detailed placement?
+Answer:
+
+Detailed placement legally places cells into valid standard-cell rows without overlap while satisfying placement rules.
+13. What is congestion?
+Answer:
+
+Congestion occurs when too many nets need to pass through a limited routing area.
+
+High congestion can result in:
+- Routing failures
+- Longer wires
+- Timing degradation
+- DRC violations
+How can you reduce congestion?
+- Reduce utilization
+- Move macros
+- Increase spacing around macros
+- Optimize placement
+- Use routing blockages appropriately
+- Improve floorplan
+- Spread cells
+CTS
+14. What is CTS?
+Answer:
+
+CTS stands for Clock Tree Synthesis.
+
+CTS creates a clock distribution network from the clock source to sequential elements such as flip-flops.
+
+Its main objective is to distribute the clock with controlled:
+- Skew
+- Latency
+- Slew
+- Transition
+- Power
+15. What is clock skew?
+Answer:
+
+Clock skew is the difference in clock arrival time between two sequential elements.
+
+For example:
+- Launch flop clock arrival = 100 ps
+- Capture flop clock arrival = 130 ps
+Then:
+\[
+Clock\ Skew = 130 - 100 = 30ps
+\]
+So the skew is 30 ps.
