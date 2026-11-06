@@ -3352,3 +3352,110 @@ Then:
 Clock\ Skew = 130 - 100 = 30ps
 \]
 So the skew is 30 ps.
+
+
+
+16. What is clock latency?
+Answer:
+
+Clock latency is the time taken by the clock signal to travel from its source to a sequential element.
+
+There are generally two types:
+- Source latency
+- Network latency
+17. What is clock jitter?
+Answer:
+
+Clock jitter is the variation of the clock edge from its ideal timing position.
+
+It can be caused by:
+- Power-supply noise
+- PLL variations
+- Environmental effects
+- Circuit noise
+Jitter reduces the available timing margin.
+STA
+18. What is STA?
+Answer:
+
+STA stands for Static Timing Analysis.
+
+It analyzes timing paths in a digital design without applying simulation vectors.
+
+It checks whether the design satisfies timing requirements, mainly:
+- Setup
+- Hold
+- Recovery
+- Removal
+19. What is a timing path?
+Answer:
+
+A timing path is a path through which a signal travels from a start point to an endpoint.
+
+A common register-to-register path is:
+
+Launch Flip-Flop → Combinational Logic → Capture Flip-Flop
+20. What is setup time?
+Answer:
+
+Setup time is the minimum amount of time that the data must remain stable before the active clock edge at the capture flip-flop.
+
+If data arrives too late, a setup violation occurs.
+21. What is hold time?
+Answer:
+
+Hold time is the minimum amount of time that the data must remain stable after the active clock edge at the capture flip-flop.
+
+If data changes too quickly after the clock edge, a hold violation occurs.
+22. What is slack?
+Answer:
+
+Slack represents the timing margin of a path.
+
+A simplified definition is:
+\[
+Slack = Required\ Time - Arrival\ Time
+\]
+Positive slack
+The path meets timing.
+Negative slack
+The path has a timing violation.
+
+For example:
+- Required time = 2 ns
+- Arrival time = 1.8 ns
+\[
+Slack = 2 - 1.8 = +0.2ns
+\]
+The path has +0.2 ns slack.
+Setup and Hold
+23. What is a setup violation?
+Answer:
+
+A setup violation occurs when data arrives at the capture flip-flop later than the required time.
+
+In simple terms:
+
+Data is too slow.
+24. How do you fix setup violations?
+Answer:
+
+Common techniques include:
+- Upsize cells
+- Use faster cells
+- Reduce combinational logic delay
+- Optimize critical paths
+- Reduce wire length
+- Improve placement
+- Reduce load capacitance
+- Reduce fanout
+- Optimize buffering
+- Apply useful skew where appropriate
+25. What is a hold violation?
+Answer:
+
+A hold violation occurs when data reaches the capture flip-flop too early after the active clock edge.
+
+In simple terms:
+
+Data is too fast.
