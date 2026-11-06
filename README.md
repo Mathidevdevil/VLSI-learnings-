@@ -3459,3 +3459,52 @@ A hold violation occurs when data reaches the capture flip-flop too early after 
 In simple terms:
 
 Data is too fast.
+26. How do you fix hold violations?
+Answer:
+
+Common methods include:
+- Add delay cells
+- Add buffers
+- Increase data-path delay
+- Optimize clock skew
+- Adjust cell sizing
+- Perform post-CTS hold optimization
+The important point is that hold fixing generally involves adding delay to the data path.
+27. Why is hold fixing generally done after CTS?
+Answer:
+
+Because clock arrival times and skew become more realistic after CTS.
+
+Before CTS, the clock network is not physically implemented, so hold analysis may not represent the final clock behavior accurately.
+
+Therefore, detailed hold optimization is generally performed after CTS.
+Routing
+28. What is routing?
+Answer:
+
+Routing is the process of physically connecting placed cells according to the logical netlist using metal layers and vias.
+
+Routing has two major stages:
+
+Global Routing → Detailed Routing
+29. What is a via?
+Answer:
+
+A via is a vertical electrical connection between different metal layers.
+
+For example:
+
+Metal 1 → Via → Metal 2
+30. What is DRC?
+Answer:
+
+DRC stands for Design Rule Check.
+
+It verifies whether the physical layout follows the manufacturing rules.
+
+Examples:
+- Minimum metal width
+- Minimum spacing
+- Via rules
+- Enclosure rules
+- Short circuits
