@@ -3233,3 +3233,65 @@ We determine:
 - Power structure
 - Placement blockages
 A good floorplan helps reduce congestion and timing problems.
+
+
+
+6. What is utilization?
+Answer:
+
+Utilization represents the percentage of available core area occupied by standard cells.
+\[
+Utilization =
+\frac{Standard\ Cell\ Area}{Core\ Area}\times100
+\]
+For example, if standard-cell area is 60,000 µm² and core area is 80,000 µm²:
+\[
+\frac{60000}{80000}\times100=75\%
+\]
+So the utilization is 75%.
+7. What happens if utilization is too high?
+Answer:
+
+Very high utilization can cause:
+- Routing congestion
+- Timing degradation
+- Placement difficulties
+- DRC violations
+- Lack of routing resources
+Therefore, utilization should be chosen appropriately for the technology and design.
+8. What is a macro?
+Answer:
+
+A macro is a relatively large pre-designed block used inside a chip.
+
+Examples:
+- SRAM
+- ROM
+- PLL
+- Analog IP
+- Memory controller IP
+Macros are generally placed during floorplanning before standard-cell placement.
+9. What is a halo?
+Answer:
+
+A halo is a placement keep-out region around a macro.
+
+It prevents standard cells from being placed too close to the macro.
+
+Halos help with:
+- Routing access
+- Congestion reduction
+- Macro pin accessibility
+- Timing optimization
+Placement
+10. What is placement?
+Answer:
+
+Placement is the process of determining the physical locations of standard cells inside the core area.
+
+The placement tool tries to optimize:
+- Timing
+- Wirelength
+- Congestion
+- Power
+- Density
